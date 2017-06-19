@@ -1,0 +1,37 @@
+private String EmbededCodesUniversalEmbedModuleRadioButtonDefaultXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement EmbededCodesUniversalEmbedModuleRadioButtonDefault;
+EmbededCodesUniversalEmbedModuleRadioButtonDefault = new CU_WebElement("Embeded Codes Universal Embed Module Radio Button Default", By.xpath(EmbededCodesUniversalEmbedModuleRadioButtonDefaultXpath), driver);
+public void setEmbededCodesUniversalEmbedModuleRadioButtonDefault (String value){
+   EmbededCodesUniversalEmbedModuleRadioButtonDefault.click();
+   wHelper.sleep(2);
+}
+
+private String EmbededCodesUniversalEmbedModuleTextareaDefaultXpath = "//textarea[@class='form-control embed-default valid']"
+protected CU_WebElement EmbededCodesUniversalEmbedModuleTextareaDefault;
+EmbededCodesUniversalEmbedModuleTextareaDefault = new CU_WebElement("Embeded Codes Universal Embed Module Textarea Default", By.xpath(EmbededCodesUniversalEmbedModuleTextareaDefaultXpath), driver);
+public void setEmbededCodesUniversalEmbedModuleTextareaDefault (String value){
+   EmbededCodesUniversalEmbedModuleTextareaDefault.sendKeys(value);
+}
+
+private String EmbededCodesUniversalEmbedModuleRadioButtonWordPressXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement EmbededCodesUniversalEmbedModuleRadioButtonWordPress;
+EmbededCodesUniversalEmbedModuleRadioButtonWordPress = new CU_WebElement("Embeded Codes Universal Embed Module Radio Button WordPress", By.xpath(EmbededCodesUniversalEmbedModuleRadioButtonWordPressXpath), driver);
+public void setEmbededCodesUniversalEmbedModuleRadioButtonWordPress (String value){
+   EmbededCodesUniversalEmbedModuleRadioButtonWordPress.click();
+   wHelper.sleep(2);
+}
+
+private String EmbededCodesUniversalEmbedModuleTextareaWordPressXpath = "//textarea[@class='form-control embed-wordpress valid']"
+protected CU_WebElement EmbededCodesUniversalEmbedModuleTextareaWordPress;
+EmbededCodesUniversalEmbedModuleTextareaWordPress = new CU_WebElement("Embeded Codes Universal Embed Module Textarea WordPress", By.xpath(EmbededCodesUniversalEmbedModuleTextareaWordPressXpath), driver);
+public void setEmbededCodesUniversalEmbedModuleTextareaWordPress (String value){
+   EmbededCodesUniversalEmbedModuleTextareaWordPress.sendKeys(value);
+}
+
+private String Embeded CodesButtonCopyToClipboardXpath = "//button[@class='btn btn-success h2 copy-to-clipboard']"
+protected CU_WebElement CodesButtonCopyToClipboard;
+CodesButtonCopyToClipboard = new CU_WebElement("Embeded Codes Button Copy To Clipboard", By.xpath(CodesButtonCopyToClipboardXpath), driver);
+public void setCodesButtonCopyToClipboard (String value){
+   CodesButtonCopyToClipboard.click();
+   wHelper.sleep(2);
+}

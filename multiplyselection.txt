@@ -1,0 +1,59 @@
+===================================================
+protected CU_WebElement SelectMultyRemoveButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-header select_many_text']/button[@class='btn btn-default red btn-remove-step']"
+SelectMultyRemoveButton = new CU_WebElement("Multiply Selection Remove button", By.xpath(SelectMultyRemoveButtonXpath ), driver);
+public void setRemoveButton (){
+   SelectMultyRemoveButtonXpath.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectMultyDescriptionQuestiontXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']"
+SelectMultyDescriptionQuestiont = new CU_WebElement("Description Questiont textarea", By.xpath(SelectMultyDescriptionQuestiontXpath ), driver);
+public void seSelectMultyDescriptionQuestiontt (String value){
+   SelectMultyDescriptionQuestiont.sendKeys(value);
+}
+
+===================================================
+protected CU_WebElement SelectMultyRandomizeOptionsXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group']/div[@class='col-sm-2']/div[@class='checkbox-container checkbox-inline']/label/div[@class='checker']/span/input"
+SelectMultyRandomizeOptions = new CU_WebElement("Randomize options", By.xpath(SelectMultyRandomizeOptionsXpath ), driver);
+public void setRandomizeOptions (String value){
+   SelectMultyRandomizeOptions.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectMultyOptionsOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/input[@class='form-control always-enabled']"
+SelectMultyOptionsOne = new CU_WebElement("Option 1 textarea", By.xpath(SelectMultyOptionsOneXpath ), driver);
+public void setSelectMultyOptionsOne (String value){
+   SelectMultyOptionsOne.sendKeys(value);
+}
+
+===================================================
+protected CU_WebElement SelectMultyOptionsTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/input[@class='form-control always-enabled']"
+SelectMultyOptionsTwo = new CU_WebElement("Option 2 textarea", By.xpath(SelectMultyOptionsTwoXpath ), driver);
+public void setSelectMultyOptionsTwo (String value){
+   SelectMultyOptionsTwo.sendKeys(value);
+}
+
+===================================================
+protected CU_WebElement SelectMultyRandomizeOptionsXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][2]/div[@class='col-sm-6 col-sm-offset-3']/button[@class='btn btn-default grey steps-options-btn']"
+SelectMultyOneOptions = new CU_WebElement("Insert New", By.xpath(SelectMultyOneOptionsXpath ), driver);
+public void setSelectMultyOneOptions (String value){
+   SelectMultyRandomizeOptions.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectMultyOptionsFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/input[@class='form-control always-enabled']"
+SelectMultyOptionsFree = new CU_WebElement("Option 3 textarea", By.xpath(SelectMultyOptionsFreeXpath ), driver);
+public void setSelectMultyOptionsFree (String value){
+   SelectMultyOptionsFree.sendKeys(value);
+}
+
+===================================================
+protected CU_WebElement SelectMultyInsertNewXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-1']/button[@class='btn btn-default red btn-remove-step-option']/span[@class='fa fa-close']"
+SelectMultyInsertNew = new CU_WebElement("Insert New button", By.xpath(SelectMultyInsertNewXpath ), driver);
+public void setSelectMultyInsertNew (String value){
+   SelectMultyInsertNew.click();
+   wHelper.sleep(2);
+}

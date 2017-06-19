@@ -1,0 +1,36 @@
+private String CreateNewPollPollShortTitleXpath = "//input[@id='short_title']"
+protected CU_WebElement CreateNewPollPollShortTitle;
+CreateNewPollPollShortTitle = new CU_WebElement("Create New Poll Poll Short Title", By.xpath(CreateNewPollPollShortTitleXpath), driver);
+public void setCreateNewPollPollShortTitle (String value){
+   CreateNewPollPollShortTitle .sendKeys(value);
+}
+
+private String CreateNewPollPollTitleXpath = "//input[@id='title']"
+protected CU_WebElement CreateNewPollPollTitle;
+CreateNewPollPollTitle = new CU_WebElement("Create New Poll Poll Title", By.xpath(CreateNewPollPollTitleXpath), driver);
+public void setCreateNewPollPollTitle (String value){
+   CreateNewPollPollTitle .sendKeys(value);
+}
+
+private String CreateNewPollParentArticleURLXpath = "//input[@id='parent_article_url']"
+protected CU_WebElement CreateNewPollParentArticleURL;
+CreateNewPollParentArticleURL = new CU_WebElement("Create New Poll Parent Article URL", By.xpath(CreateNewPollParentArticleURLXpath), driver);
+public void setCreateNewPollParentArticleURL (String value){
+   CreateNewPollParentArticleURL .sendKeys(value);
+}
+
+private String CreateNewPollShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement CreateNewPollShowCoverImageNo;
+CreateNewPollShowCoverImageNo = new CU_WebElement("Create New Poll Show Cover Image No", By.xpath(CreateNewPollShowCoverImageNoXpath), driver);
+public void CreateNewPollShowCoverImageNo (String value){
+   CreateNewPollShowCoverImageNo.click();
+   wHelper.sleep(2);
+}
+
+private String CreateNewPollShowCoverImageYesXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement CreateNewPollShowCoverImageYes;
+CreateNewPollShowCoverImageYes = new CU_WebElement("Create New Poll Show Cover Image Yes", By.xpath(CreateNewPollShowCoverImageYesXpath), driver);
+public void setCreateNewPollShowCoverImageYes (String value){
+   CreateNewPollShowCoverImageYes.click();
+   wHelper.sleep(2);
+}

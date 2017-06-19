@@ -1,0 +1,50 @@
+
+private String PollStepsDescriptionQuestionXpath = "//textarea[@id='description']"
+protected CU_WebElement PollStepsDescriptionQuestion;
+PollStepsDescriptionQuestion = new CU_WebElement("Poll Steps Description Question", By.xpath(PollStepsDescriptionQuestionXpath), driver);
+public void setPollStepsDescriptionQuestion (String value){
+   PollStepsDescriptionQuestion.sendKeys(value);
+}
+
+private String PollStepsCheckboxRandomizeOptionsXpath = "//div[@class='checkbox-container checkbox-inline']"
+protected CU_WebElement PollStepsCheckboxRandomizeOptionst;
+PollStepsCheckboxRandomizeOptions = new CU_WebElement("Poll Steps Checkbox Randomize Options", By.xpath(PollStepsCheckboxRandomizeOptionsXpath), driver);
+public void setPollStepsCheckboxRandomizeOptions (String value){
+   PollStepsCheckboxRandomizeOptions.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsOptionOneXpath = "//div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement PollStepsOptionOne;
+PollStepsOptionOne = new CU_WebElement("Poll Steps Option One", By.xpath(PollStepsOptionOneXpath), driver);
+public void setPollStepsOptionOne (String value){
+   PollStepsOptionOne.sendKeys(value);
+}
+
+private String PollStepsOptionTwoXpath = "//input[@class='form-control always-enabled']"
+protected CU_WebElement PollStepsOptionTwo;
+PollStepsOptionTwo = new CU_WebElement("Poll Steps Option Two", By.xpath(PollStepsOptionTwoXpath), driver);
+public void setPollStepsOptionTwo (String value){
+   PollStepsOptionTwo.sendKeys(value);
+}
+
+private String PollStepsOptionThreeXpath = "//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement PollStepsOptionThree;
+PollStepsOptionThree = new CU_WebElement("Poll Steps Option #Three", By.xpath(PollStepsOptionThreeXpath), driver);
+public void setPollStepsOptionThree (String value){
+   PollStepsOptionThree.sendKeys(value);
+}
+
+private String PollStepsOptionFourXpath = "//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement PollStepsOptionFour;
+PollStepsOptionFour = new CU_WebElement("Poll Steps Option Four", By.xpath(PollStepsOptionFourXpath), driver);
+public void setPollStepsOptionFour (String value){
+   PollStepsOptionFour.sendKeys(value);
+}
+
+private String PollStepsOptionFiveXpath = "//div[@class='form-group steps-partial-options'][5]/div[@class='col-sm-6']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement PollStepsOptionFive;
+PollStepsOptionFive = new CU_WebElement("Poll Steps Option Five", By.xpath(PollStepsOptionFiveXpath), driver);
+public void setPollStepsOptionFive (String value){
+   PollStepsOptionFive.sendKeys(value);
+}

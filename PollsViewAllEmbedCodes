@@ -1,0 +1,30 @@
+private String EmbedCodesDefaultXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement EmbedCodesDefault;
+EmbedCodesDefault = new CU_WebElement("Embed Codes Default", By.xpath(EmbedCodesDefaultXpath), driver);
+public void setEmbedCodesDefault (String value){
+   EmbedCodesDefault.click();
+   wHelper.sleep(2);
+}
+
+private String EmbedCodesWordPressXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement EmbedCodesWordPress;
+EmbedCodesWordPress = new CU_WebElement("Embed Codes WordPress", By.xpath(EmbedCodesWordPressXpath), driver);
+public void setEmbedCodesWordPress (String value){
+   EmbedCodesWordPress.click();
+   wHelper.sleep(2);
+}
+
+private String EmbedCodesTextareaXpath = "//textarea[@class='form-control embed-wordpress valid']"
+protected CU_WebElement EmbedCodesTextarea;
+EmbedCodesTextarea = new CU_WebElement("Embed Codes Textarea", By.xpath(EmbedCodesTextareaXpath), driver);
+public void setEmbedCodesTextarea (String value){
+   EmbedCodesTextarea .sendKeys(value);
+}
+
+private String EmbedCodesCopytoclipboardXpath = "//button[@class='btn btn-success h2 copy-to-clipboard']"
+protected CU_WebElement EmbedCodesCopytoclipboard;
+EmbedCodesCopytoclipboard = new CU_WebElement("Embed Codes Copy to clipboard", By.xpath(EmbedCodesCopytoclipboardXpath), driver);
+public void setEmbedCodesCopytoclipboard (String value){
+   EmbedCodesCopytoclipboard.click();
+   wHelper.sleep(2);
+}

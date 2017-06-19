@@ -1,0 +1,59 @@
+private String CreateNewQuizShortTitleXpath = "//div[@class='form-group padding-top-20'][1]/div[@class='col-sm-6']/input[@class='form-control']"
+protected CU_WebElement CreateNewQuizShortTitle;
+CreateNewQuizShortTitle = new CU_WebElement("Create New Quiz Short Title", By.xpath(CreateNewQuizShortTitleXpath ), driver);
+public void setCreateNewQuizShortTitle (String value){
+   CreateNewQuizShortTitle .sendKeys(value);
+}
+
+private String CreateNewQuizQuizTitleXpath = "//input[@id='title']"
+protected CU_WebElement CreateNewQuizQuizTitle;
+CreateNewQuizQuizTitle = new CU_WebElement("Create New Quiz Quiz Title", By.xpath(CreateNewQuizQuizTitleXpath ), driver);
+public void setCreateNewQuizQuizTitle (String value){
+   CreateNewQuizQuizTitle .sendKeys(value);
+}
+
+private String CreateNewQuizParentArticleURLXpath = "//div[@class='form-group padding-top-20'][3]/div[@class='col-sm-6']/input[@class='form-control']"
+protected CU_WebElement CreateNewQuizParentArticleURL;
+CreateNewQuizParentArticleURL = new CU_WebElement("Create New Quiz Parent Article URL", By.xpath(CreateNewQuizParentArticleURLXpath ), driver);
+public void setCreateNewQuizParentArticleURL (String value){
+   CreateNewQuizParentArticleURL .sendKeys(value);
+}
+
+private String CreateNewQuizQuizLengthOneXpath = "//input[@id='quiz_length']"
+protected CU_WebElement CreateNewQuizQuizLengthOne;
+CreateNewQuizQuizLengthOne = new CU_WebElement("Create New Quiz Quiz Length One", By.xpath(CreateNewQuizQuizLengthOneXpath), driver);
+public void setCreateNewQuizQuizLengthOne (String value){
+   // ??? 
+   CreateNewQuizQuizLengthOne.sendKeys(value);
+}
+
+private String CreateNewQuizQuizLengthTwoXpath = "//select[@class='form-control']"
+protected CU_WebElement CreateNewQuizQuizLengthTwo;
+CreateNewQuizQuizLengthTwo = new CU_WebElement("Create New Quiz Quiz Length Two", By.xpath(CreateNewQuizQuizLengthTwoXpath), driver);
+public void setCreateNewQuizQuizLengthTwo (){
+   CreateNewQuizQuizLengthTwo.click();
+   wHelper.sleep(2);
+}
+
+private String CreateNewQuizDescriptionXpath = "//div[@class='form-group'][3]/div[@class='col-sm-6']"
+protected CU_WebElement CreateNewQuizDescription;
+CreateNewQuizDescription = new CU_WebElement("Create New Quiz Description", By.xpath(CreateNewQuizDescriptionXpath), driver);
+public void setCreateNewQuizDescription (String value){
+   CreateNewQuizDescription .sendKeys(value);
+}
+
+private String CreateNewQuizShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement CreateNewQuizShowCoverImageNo;
+CreateNewQuizShowCoverImageNo = new CU_WebElement("Create New Quiz Show Cover Image No", By.xpath(CreateNewQuizShowCoverImageNoXpath), driver);
+public void setCreateNewQuizShowCoverImageNo (){
+   CreateNewQuizShowCoverImageNo.click();
+   wHelper.sleep(2);
+}
+
+private String CreateNewQuizShowCoverImageYesXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement CreateNewQuizShowCoverImageYes;
+CreateNewQuizShowCoverImageYes = new CU_WebElement("Create New Quiz Show Cover Image Yes", By.xpath(CreateNewQuizShowCoverImageYesXpath), driver);
+public void setCreateNewQuizShowCoverImageYes (){
+   CreateNewQuizShowCoverImageYes.click();
+   wHelper.sleep(2);
+}

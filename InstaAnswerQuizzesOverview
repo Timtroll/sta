@@ -1,0 +1,116 @@
+private String OverviewStatusXpath = "//select[@id='status']"
+protected CU_WebElement OverviewStatus;
+OverviewStatus = new CU_WebElement("Overview Status", By.xpath(OverviewStatusXpath), driver);
+public void setOverviewStatus (){
+   OverviewStatus.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewShortTitleXpath = "//input[@id='short_title']"
+protected CU_WebElement OverviewShortTitle;
+OverviewShortTitle = new CU_WebElement("Overview Short Title", By.xpath(OverviewShortTitleXpath), driver);
+public void setOverviewShortTitle (String value){
+   OverviewShortTitle .sendKeys(value);
+}
+
+private String OverviewQuizTitleXpath = "//input[@id='title']"
+protected CU_WebElement OverviewQuizTitle;
+OverviewQuizTitle = new CU_WebElement("Overview Quiz Title", By.xpath(OverviewQuizTitleXpath), driver);
+public void setOverviewQuizTitle (String value){
+   OverviewQuizTitle .sendKeys(value);
+}
+
+private String OverviewParentArticleURLXpath = "//div[@class='form-group'][4]/div[@class='col-sm-6']/input[@class='form-control']"
+protected CU_WebElement OverviewParentArticleURL;
+OverviewParentArticleURL = new CU_WebElement("Overview Parent Article URL", By.xpath(OverviewParentArticleURLXpath), driver);
+public void setOverviewParentArticleURL (String value){
+   OverviewParentArticleURL .sendKeys(value);
+}
+
+private String OverviewQuizLengthOneXpath = "//input[@id='quiz_length']"
+protected CU_WebElement OverviewQuizLengthOne;
+OverviewQuizLengthOne = new CU_WebElement("Overview Quiz Length One", By.xpath(OverviewQuizLengthOneXpath), driver);
+public void setOverviewQuizLengthOne (String value){
+   // ??? 
+   OverviewQuizLengthOne.sendKeys(value);
+}
+
+private String OverviewQuizLengthTwoXpath = "//select[@class='form-control']"
+protected CU_WebElement OverviewQuizLengthTwo;
+OverviewQuizLengthTwo = new CU_WebElement("Overview Quiz Length Two", By.xpath(OverviewQuizLengthTwoXpath), driver);
+public void setOverviewQuizLengthTwo (){
+   OverviewQuizLengthTwo.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewDescriptionXpath = "//div[@class='form-group'][6]/div[@class='col-sm-4']"
+protected CU_WebElement OverviewDescription;
+OverviewDescription = new CU_WebElement("Overview Description", By.xpath(OverviewDescriptionXpath), driver);
+public void setOverviewDescription (String value){
+   OverviewDescription .sendKeys(value);
+}
+
+private String OverviewShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement OverviewShowCoverImageNo;
+OverviewShowCoverImageNo = new CU_WebElement("Overview Show Cover Image No", By.xpath(OverviewShowCoverImageNoXpath), driver);
+public void setOverviewShowCoverImageNo (){
+   OverviewShowCoverImageNo.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewShowCoverImageYesXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement OverviewShowCoverImageYes;
+OverviewShowCoverImageYes = new CU_WebElement("Overview Show Cover Image Yes", By.xpath(OverviewShowCoverImageYesXpath), driver);
+public void setOverviewShowCoverImageYes (){
+   OverviewShowCoverImageYes.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewCoverImageInputXpath = "//input[@class='form-control search_images_input']"
+protected CU_WebElement OverviewCoverImageInput;
+OverviewCoverImageInput = new CU_WebElement("Overview Cover Image Input", By.xpath(OverviewCoverImageInputXpath), driver);
+public void setOverviewCoverImageInput (String value){
+   OverviewCoverImageInput .sendKeys(value);
+}
+
+private String OverviewCoverImageSearchXpath = "//input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin has-image']"
+protected CU_WebElement OverviewCoverImageSearch;
+OverviewCoverImageSearch = new CU_WebElement("Overview Cover Image Search", By.xpath(OverviewCoverImageSearchXpath), driver);
+public void setOverviewCoverImageSearch (){
+   OverviewCoverImageSearch.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewCoverImageRemoveXpath = "//input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement OverviewCoverImageRemove;
+OverviewCoverImageRemove = new CU_WebElement("Overview Cover Image Remove", By.xpath(OverviewCoverImageRemoveXpath), driver);
+public void setOverviewCoverImageRemove (){
+   OverviewCoverImageRemove.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewCoverImageImageUnderXpath = "//div[@class='image-preview']"
+protected CU_WebElement OverviewCoverImageImageUnder;
+OverviewCoverImageImageUnder = new CU_WebElement("Overview Cover Image Image Under", By.xpath(OverviewCoverImageImageUnderXpath), driver);
+CR-Money-Hero-May-Deep-Discount-v2-0417
+
+private String OverviewCoverImageImageOverXpath = "//div[@class='cover-preview']"
+protected CU_WebElement OverviewCoverImageImageOver;
+OverviewCoverImageImageOver = new CU_WebElement("Overview Cover Image Image Over", By.xpath(OverviewCoverImageImageOverXpath), driver);
+CR-Money-Hero-May-Deep-Discount-v2-0417
+
+private String OverviewGenerateResponsesLinkXpath = "//div[@class='form-group'][8]/div[@class='col-sm-4']/a"
+protected CU_WebElement OverviewGenerateResponsesLink;
+OverviewGenerateResponsesLink = new CU_WebElement("Overview Generate Responses Link", By.xpath(OverviewGenerateResponsesLinkXpath), driver);
+public void setOverviewGenerateResponsesLink (){
+   OverviewGenerateResponsesLink.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewRemoveGeneratedResponsesLinkXpath = "//div[@class='form-group'][9]/div[@class='col-sm-4']/a"
+protected CU_WebElement OverviewRemoveGeneratedResponsesLink;
+OverviewRemoveGeneratedResponsesLink = new CU_WebElement("Overview Remove Generated Responses Link", By.xpath(OverviewRemoveGeneratedResponsesLinkXpath), driver);
+public void setOverviewRemoveGeneratedResponsesLink (){
+   OverviewRemoveGeneratedResponsesLink.click();
+   wHelper.sleep(2);
+}

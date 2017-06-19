@@ -1,0 +1,62 @@
+﻿===================================================
+RemoveButtonXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-header select_one_text']/button[@class='btn btn-default red btn-remove-step']
+RemoveButton = new CU_WebElement("Single Selection Remove button", By.xpath(RemoveButtonXpath ), driver);
+public void setRemoveButton (){
+   RemoveButton.click();
+   wHelper.sleep(2);
+}
+===================================================
+SingleSelectionMovingDivXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-header select_one_text']/div[@class='btn btn-sort']
+SingleSelectionMovingDiv = new CU_WebElement("Single Selection Remove button", By.xpath(SingleSelectionMovingDivXpath ), driver);
+public void setSingleSelectionMovingDiv (){
+// ??????? Drag and drop
+   SingleSelectionMovingDiv.click();
+   wHelper.sleep(2);
+}
+===================================================
+DescriptionQuestionXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']
+DescriptionQuestion = new CU_WebElement("Description Question textarea", By.xpath(DescriptionQuestionXpath ), driver);
+public void setDescriptionQuestion (String value){
+   DescriptionQuestion.sendKeys(value);
+}
+===================================================
+RandomizeOptionsXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group']/div[@class='col-sm-2']/div[@class='checkbox-container checkbox-inline']/label/div[@class='checker']/span/input
+RandomizeOptions = new CU_WebElement("Description Question textarea", By.xpath(DescriptionQuestionXpath ), driver);
+public void setRandomizeOptions (String value){
+   RandomizeOptions.click();
+   wHelper.sleep(2);
+}
+===================================================
+FirstOptionXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/input[@class='form-control always-enabled']
+FirstOption = new CU_WebElement("Description Question textarea", By.xpath(FirstOptionXpath ), driver);
+public void setFirstOption (String value){
+   FirstOption.sendKeys(value);
+}
+
+===================================================
+SecondOptionXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/input[@class='form-control always-enabled']
+SecondOption = new CU_WebElement("Description Question textarea", By.xpath(SecondOptionXpath ), driver);
+public void setSecondOption (String value){
+   SecondOption.sendKeys(value);
+}
+===================================================
+InsertNewXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][2]/div[@class='col-sm-6 col-sm-offset-3']/button[@class='btn btn-default grey steps-options-btn']
+InsertNew = new CU_WebElement("Description Question textarea", By.xpath(InsertNewXpath ), driver);
+public void setInsertNew (String value){
+   InsertNew.click();
+   wHelper.sleep(2);
+}
+===================================================
+ThirdOptionXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/input[@class='form-control always-enabled']
+ThirdOption = new CU_WebElement("Description Question textarea", By.xpath(ThirdOptionXpath ), driver);
+public void setThirdOption (String value){
+   ThirdOption.sendKeys(value);
+}
+===================================================
+ThirdDelOptionXpath = //div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-1']/button[@class='btn btn-default red btn-remove-step-option']/span[@class='fa fa-close']
+ThirdDelOption = new CU_WebElement("Description Question textarea", By.xpath(ThirdDelOptionXpath ), driver);
+public void setThirdDelOption (String value){
+   ThirdDelOption.click();
+   wHelper.sleep(2);
+}
+}

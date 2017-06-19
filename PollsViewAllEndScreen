@@ -1,0 +1,13 @@
+private String EndScreenTitleXpath = "//input[@class='outcome-category-title form-control always-enabled valid']"
+protected CU_WebElement EndScreenTitle;
+EndScreenTitle = new CU_WebElement("End Screen Title", By.xpath(EndScreenTitleXpath), driver);
+public void setEndScreenTitle (String value){
+   EndScreenTitle.sendKeys(value);
+}
+
+private String EndScreenTextXpath = "//div[@class='form-group'][2]/div[@class='col-sm-4']"
+protected CU_WebElement EndScreenText;
+EndScreenText = new CU_WebElement("End Screen Text", By.xpath(EndScreenTextXpath), driver);
+public void setEndScreenText (String value){
+   EndScreenText.sendKeys(value);
+}

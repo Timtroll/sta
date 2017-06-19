@@ -1,0 +1,435 @@
+===================================================
+private String SelectManyRemoveButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-header select_many_text']/button[@class='btn btn-default red btn-remove-step']"
+protected CU_WebElement SelectManyRemoveButton;
+SelectManyRemoveButton = new CU_WebElement("Select Many Multiply Selection Remove Button", By.xpath(SelectManyRemoveButtonXpath ), driver);
+public void setSelectManyRemoveButton (){
+   SelectManyRemoveButton.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyDescriptionQuestiontXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']"
+SelectManyDescriptionQuestiont = new CU_WebElement("Select Many Description Questiont textarea", By.xpath(SelectManyDescriptionQuestiontXpath ), driver);
+protected CU_WebElement SelectManyDescriptionQuestiont;
+public void setSelectManyDescriptionQuestiont (String value){
+   SelectManyDescriptionQuestiont.sendKeys(value);
+}
+
+===================================================
+private String SelectManyRandomizeOptionsXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group']/div[@class='col-sm-2']/div[@class='checkbox-container checkbox-inline']/label/div[@class='checker']/span/input"
+protected CU_WebElement SelectManyRandomizeOptions;
+SelectManyRandomizeOptions = new CU_WebElement("Select Many Randomize options", By.xpath(SelectManyRandomizeOptionsXpath ), driver);
+public void setRandomizeOptions (String value){
+   SelectManyRandomizeOptions.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyInputOptionsOneXpath = "//div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement SelectManyInputOptionsOne;
+SelectManyInputOptionsOne = new CU_WebElement("Select Many Option 1 textarea", By.xpath(SelectManyInputOptionsOneXpath ), driver);
+public void setSelectManyInputOptionsOne (String value){
+   SelectManyInputOptionsOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionOneSearchButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement SelectManyOptionOneSearchButton;
+SelectManyOptionOneSearchButton = new CU_WebElement("Select Many Option 1 Search button", By.xpath(SelectManyOptionOneSearchButtonXpath ), driver);
+public void setSelectManyOptionOneSearchButton (String value){
+   SelectManyOptionOneSearchButton.click();
+   wHelper.sleep(2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================
+private String Select ManyOptionOneImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement ManyOptionOneImageOne;
+ManyOptionOneImageOne = new CU_WebElement("Select Many Option 1 textarea", By.xpath(ManyOptionOneImageOneXpath ), driver);
+public void setManyOptionOneImageOne (String value){
+   ManyOptionOneImageOne.sendKeys(value);
+}
+
+===================================================
+private String Select ManyOptionOneClickImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement ManyOptionOneClickImageOne;
+ManyOptionOneClickImageOne = new CU_WebElement("Select Many Option 1 Click Image 1", By.xpath(ManyOptionOneClickImageOneXpath ), driver);
+public void setManyOptionOneClickImageOne (String value){
+   // ???
+   ManyOptionOneClickImageOne.sendKeys(value);
+}
+
+===================================================
+private String Select ManyOptionOneClickedImageOnTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement ManyOptionOneClickedImageOnTextareaOne;
+ManyOptionOneClickedImageOnTextareaOne = new CU_WebElement("Select Many Option 1 Clicked Image on textarea 1", By.xpath(ManyOptionOneClickedImageOnTextareaOneXpath ), driver);
+public void setManyOptionOneClickedImageOnTextareaOne (String value){
+   // ???
+   ManyOptionOneClickedImageOnTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String Select ManyOptionOneRemoveImageButtonOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement ManyOptionOneRemoveImageButtonOne;
+ManyOptionOneRemoveImageButtonOne = new CU_WebElement("Select Many Option 1 Remove Image button 1", By.xpath(ManyOptionOneRemoveImageButtonOneXpath ), driver);
+public void setManyOptionOneRemoveImageButtonOne (String value){
+   // ???
+   ManyOptionOneRemoveImageButtonOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionOneRemoveImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionOneRemoveImageOne;
+SelectManyOptionOneRemoveImageOne = new CU_WebElement("Select Many Option 1 Remove Image 1", By.xpath(SelectManyOptionOneRemoveImageOneXpath ), driver);
+public void setSelectManyOptionOneRemoveImageOne (String value){
+   SelectManyOptionOneRemoveImageOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionOneLoadMoreOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+protected CU_WebElement SelectManyOptionOneLoadMoreOne;
+SelectManyOptionOneLoadMoreOne = new CU_WebElement("Select Many Option 1 Load More 1", By.xpath(SelectManyOptionOneLoadMoreOneXpath ), driver);
+public void setSelectManyOptionOneLoadMoreOne (String value){
+   SelectManyOptionOneLoadMoreOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionOneImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionOneImageFive;
+SelectManyOptionOneImageFive = new CU_WebElement("Select Many Option 1 Image 5", By.xpath(SelectManyOptionOneImageFiveXpath ), driver);
+public void setSelectManyOptionOneImageFive (String value){
+   // ???
+   SelectManyOptionOneImageFive.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionOneClickImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionOneClickImageFive;
+SelectManyOptionOneClickImageFive = new CU_WebElement("Select Many Option 1 Click Image 5", By.xpath(SelectManyOptionOneClickImageFiveXpath ), driver);
+public void setSelectManyOptionOneClickImageFive (String value){
+   SelectManyOptionOneClickImageFive.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionOneRemoveImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionOneRemoveImageFive;
+SelectManyOptionOneRemoveImageFive = new CU_WebElement("Select Many Option 1 Remove Image 5", By.xpath(SelectManyOptionOneRemoveImageFiveXpath ), driver);
+public void setSelectManyOptionOneRemoveImageFive (String value){
+   SelectManyOptionOneRemoveImageFive.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionOneClickedImageOnTextareaFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionOneClickedImageOnTextareaFive;
+SelectManyOptionOneClickedImageOnTextareaFive = new CU_WebElement("Select Many Option 1 textarea", By.xpath(SelectManyOptionOneClickedImageOnTextareaFiveXpath ), driver);
+public void setSelectManyOptionOneClickedImageOnTextareaFive (String value){
+	// ???
+   SelectManyOptionOneClickedImageOnTextareaFive.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionOneRemoveImageButtonFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement SelectManyOptionOneRemoveImageButtonFive;
+SelectManyOptionOneRemoveImageButtonFive = new CU_WebElement("Select Many Option 1 Remove Image button 5", By.xpath(SelectManyOptionOneRemoveImageButtonFiveXpath ), driver);
+public void setSelectManyOptionOneRemoveImageButtonFive (String value){
+   SelectManyOptionOneRemoveImageButtonFive.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionOnetextareaOneXpath = "//div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionOnetextareaOne;
+SelectManyOptionOnetextareaOne = new CU_WebElement("Select Many Option 1 textarea 1", By.xpath(SelectManyOptionOnetextareaOneXpath ), driver);
+public void setSelectManyOptionOnetextareaOne (String value){
+   SelectManyOptionOnetextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionOneLabelOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_2']"
+protected CU_WebElement SelectManyOptionOneLabelOne;
+SelectManyOptionOneLabelOne = new CU_WebElement("Select Many Option 1 label 1", By.xpath(SelectManyOptionOneLabelOneXpath ), driver);
+public void setSelectManyOptionOneLabelOne (String value){
+   SelectManyOptionOneLabelOne.sendKeys(value);
+}
+
+
+
+
+===================================================
+private String SelectManyOptionInputOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']"
+protected CU_WebElement SelectManyOptionInputOne;
+SelectManyOptionInputOne = new CU_WebElement("Select Many Option 2 input 1", By.xpath(SelectManyOptionInputOneXpath ), driver);
+public void setSelectManyOptionInputOne (String value){
+   SelectManyOptionInputOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoSearchButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement SelectManyOptionTwoSearchButton;
+SelectManyOptionTwoSearchButton = new CU_WebElement("Select Many Option 2 Search button", By.xpath(SelectManyOptionTwoSearchButtonXpath ), driver);
+public void setSelectManyOptionTwoSearchButton (String value){
+   SelectManyOptionTwoSearchButton.click();
+   wHelper.sleep(2);
+}
+
+
+===================================================
+private String SelectManyOptionTwoImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionTwoImageOne;
+SelectManyOptionTwoImageOne = new CU_WebElement("Select Many Option 2 Image 1", By.xpath(SelectManyOptionTwoImageOneXpath ), driver);
+public void setSelectManyOptionTwoImageOne (String value){
+   // ???
+   SelectManyOptionTwoImageOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoRemoveImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionTwoRemoveImageOne;
+SelectManyOptionTwoRemoveImageOne = new CU_WebElement("Select Many Option 2 Remove Image 1", By.xpath(SelectManyOptionTwoRemoveImageOneXpath ), driver);
+public void setSelectManyOptionTwoRemoveImageOne (String value){
+   // ???
+   SelectManyOptionTwoRemoveImageOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoClickedImageOnTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionTwoClickedImageOnTextareaOne;
+SelectManyOptionTwoClickedImageOnTextareaOne = new CU_WebElement("Select Many Option 2 Clicked Image On Textarea 1", By.xpath(SelectManyOptionTwoClickedImageOnTextareaOneXpath ), driver);
+public void setSelectManyOptionTwoClickedImageOnTextareaOne (String value){
+   SelectManyOptionTwoClickedImageOnTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoRemoveImageButtonOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement SelectManyOptionTwoRemoveImageButtonOne;
+SelectManyOptionTwoRemoveImageButtonOne = new CU_WebElement("Select Many Option 2 Remove Image button 1", By.xpath(SelectManyOptionTwoRemoveImageButtonOneXpath ), driver);
+public void setSelectManyOptionTwoRemoveImageButtonOne (String value){
+   SelectManyOptionTwoRemoveImageButtonOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionTwoLoadMoreOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+protected CU_WebElement SelectManyOptionTwoLoadMoreOne;
+SelectManyOptionTwoLoadMoreOne = new CU_WebElement("Select Many Option 2 Load More 1", By.xpath(SelectManyOptionTwoLoadMoreOneXpath ), driver);
+public void setSelectManyOptionTwoLoadMoreOne (String value){
+   SelectManyOptionTwoLoadMoreOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionTwoImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionTwoImageOne;
+SelectManyOptionTwoImageOne = new CU_WebElement("Select Many Option 2 Image 1", By.xpath(SelectManyOptionTwoImageOneXpath ), driver);
+public void setSelectManyOptionTwoImageOne (String value){
+	// ???
+   SelectManyOptionTwoImageOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoRemoveImageOneXpath = "//div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionTwoRemoveImageOne;
+SelectManyOptionTwoRemoveImageOne = new CU_WebElement("Select Many Option 2 Remove Image 1", By.xpath(SelectManyOptionTwoRemoveImageOneXpath ), driver);
+public void setSelectManyOptionTwoRemoveImageOne (String value){
+   SelectManyOptionTwoRemoveImageOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionTwoClickedImageTtextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionTwoClickedImageTtextareaOne;
+SelectManyOptionTwoClickedImageTtextareaOne = new CU_WebElement("Select Many Option 2 Clicked Image on textarea 1", By.xpath(SelectManyOptionTwoClickedImageTtextareaOneXpath ), driver);
+public void setSelectManyOptionTwoClickedImageTtextareaOne (String value){
+   SelectManyOptionTwoClickedImageTtextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoRemoveImageButtonOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement SelectManyOptionTwoRemoveImageButtonOne;
+SelectManyOptionTwoRemoveImageButtonOne = new CU_WebElement("Select Many Option 2 Remove Image button  1", By.xpath(SelectManyOptionTwoRemoveImageButtonOneXpath ), driver);
+public void setSelectManyOptionTwoRemoveImageButtonOne (String value){
+   SelectManyOptionTwoRemoveImageButtonOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoLoadMoreOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+protected CU_WebElement SelectManyOptionTwoLoadMoreOne;
+SelectManyOptionTwoLoadMoreOne = new CU_WebElement("Select Many Option 2 Load More 1", By.xpath(SelectManyOptionTwoLoadMoreOneXpath ), driver);
+public void setSelectManyOptionTwoLoadMoreOne (String value){
+   SelectManyOptionTwoLoadMoreOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionTwoTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionTwoTextareaOne;
+SelectManyOptionTwoTextareaOne = new CU_WebElement("Select Many Option 2 textarea 1", By.xpath(SelectManyOptionTwoTextareaOneXpath ), driver);
+public void setSelectManyOptionTwoTextareaOne (String value){
+   SelectManyOptionTwoTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionTwoLabelOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_3']"
+protected CU_WebElement SelectManyOptionTwoLabelOne;
+SelectManyOptionTwoLabelOne = new CU_WebElement("Select Many Option 2 label 1", By.xpath(SelectManyOptionTwoLabelOneXpath ), driver);
+public void setSelectManyOptionTwoLabelOne (String value){
+   SelectManyOptionTwoLabelOne.sendKeys(value);
+}
+
+
+
+
+===================================================
+private String SelectManyOptionFreeInputOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']"
+protected CU_WebElement SelectManyOptionFreeInputOne;
+SelectManyOptionFreeInputOne = new CU_WebElement("Select Many Option 3 input 1", By.xpath(SelectManyOptionFreeInputOneXpath ), driver);
+public void setSelectManyOptionFreeInputOne (String value){
+   SelectManyOptionFreeInputOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeSearchButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement SelectManyOptionFreeSearchButton;
+SelectManyOptionFreeSearchButton = new CU_WebElement("Select Many Option 3 Search button", By.xpath(SelectManyOptionFreeSearchButtonXpath ), driver);
+public void setSelectManyOptionFreeSearchButton (String value){
+   SelectManyOptionFreeSearchButton.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeRemoveButtonXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+protected CU_WebElement SelectManyOptionFreeRemoveButton;
+SelectManyOptionFreeRemoveButton = new CU_WebElement("Select Many Option 3 Remove button", By.xpath(SelectManyOptionFreeRemoveButtonXpath ), driver);
+public void setSelectManyOptionFreeRemoveButton (String value){
+   SelectManyOptionFreeRemoveButton.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionFreeImageOne;
+SelectManyOptionFreeImageOne = new CU_WebElement("Select Many Option 3 Image 1", By.xpath(SelectManyOptionFreeImageOneXpath ), driver);
+public void setSelectManyOptionFreeImageOne (String value){
+   // ??
+   SelectManyOptionFreeImageOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeRemoveImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][1]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionFreeRemoveImageOne;
+SelectManyOptionFreeRemoveImageOne = new CU_WebElement("Select Many Option 3 Remove Image 1", By.xpath(SelectManyOptionFreeRemoveImageOneXpath ), driver);
+public void setSelectManyOptionFreeRemoveImageOne (String value){
+   SelectManyOptionFreeRemoveImageOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeClickedImageTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionFreeClickedImageTextareaOne;
+SelectManyOptionFreeClickedImageTextareaOne = new CU_WebElement("Select Many Option 3 Clicked Image on textarea 1", By.xpath(SelectManyOptionFreeClickedImageTextareaOneXpath ), driver);
+public void setSelectManyOptionFreeClickedImageTextareaOne (String value){
+	// ???
+   SelectManyOptionFreeClickedImageTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeRemoveImageButtonOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement SelectManyOptionFreeRemoveImageButtonOne;
+SelectManyOptionFreeRemoveImageButtonOne = new CU_WebElement("Select Many Option 3 Remove Image Button 1", By.xpath(SelectManyOptionFreeRemoveImageButtonOneXpath ), driver);
+public void setSelectManyOptionFreeRemoveImageButtonOne (String value){
+   SelectManyOptionFreeRemoveImageButtonOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeLoadMoreOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+protected CU_WebElement SelectManyOptionFreeLoadMoreOne;
+SelectManyOptionFreeLoadMoreOne = new CU_WebElement("Select Many Option 3 Load More 1", By.xpath(SelectManyOptionFreeLoadMoreOneXpath ), driver);
+public void setSelectManyOptionFreeLoadMoreOne (String value){
+   SelectManyOptionFreeLoadMoreOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+protected CU_WebElement SelectManyOptionFreeImageOne;
+SelectManyOptionFreeImageOne = new CU_WebElement("Select Many Option 3 Image 1", By.xpath(SelectManyOptionFreeImageOneXpath ), driver);
+public void setSelectManyOptionFreeImageOne (String value){
+	// ??
+   SelectManyOptionFreeImageOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeRemoveImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='remove-image']"
+protected CU_WebElement SelectManyOptionFreeRemoveImageOne;
+SelectManyOptionFreeRemoveImageOne = new CU_WebElement("Select Many Option 3 Remove Image 1", By.xpath(SelectManyOptionFreeRemoveImageOneXpath ), driver);
+public void setSelectManyOptionFreeRemoveImageOne (String value){
+   SelectManyOptionFreeRemoveImageOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeClickedImageTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionFreeClickedImageTextareaOne;
+SelectManyOptionFreeClickedImageTextareaOne = new CU_WebElement("Select Many Option 3 Clicked Image on textarea 1", By.xpath(SelectManyOptionFreeClickedImageTextareaOneXpath ), driver);
+public void setSelectManyOptionFreeClickedImageTextareaOne (String value){
+	 // ??
+   SelectManyOptionFreeClickedImageTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeRemoveImageButtonOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-2']/input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']"
+protected CU_WebElement SelectManyOptionFreeRemoveImageButtonOne;
+SelectManyOptionFreeRemoveImageButtonOne = new CU_WebElement("Select Many Option 3 Remove Image button  1", By.xpath(SelectManyOptionFreeRemoveImageButtonOneXpath ), driver);
+public void setSelectManyOptionFreeRemoveImageButtonOne (String value){
+   SelectManyOptionFreeRemoveImageButtonOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeLoadMoreOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+protected CU_WebElement SelectManyOptionFreeLoadMoreOne;
+SelectManyOptionFreeLoadMoreOne = new CU_WebElement("Select Many Option 3 Load More 1", By.xpath(SelectManyOptionFreeLoadMoreOneXpath ), driver);
+public void setSelectManyOptionFreeLoadMoreOne (String value){
+   SelectManyOptionFreeLoadMoreOne.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+private String SelectManyOptionFreeTextareaOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement SelectManyOptionFreeTextareaOne;
+SelectManyOptionFreeTextareaOne = new CU_WebElement("Select Many Option 3 textarea 1", By.xpath(SelectManyOptionFreeTextareaOneXpath ), driver);
+public void setSelectManyOptionFreeTextareaOne (String value){
+   SelectManyOptionFreeTextareaOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionFreeLabelOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_4']"
+protected CU_WebElement SelectManyOptionFreeLabelOne;
+SelectManyOptionFreeLabelOne = new CU_WebElement("Select Many Option 3 label 1", By.xpath(SelectManyOptionFreeLabelOneXpath ), driver);
+public void setSelectManyOptionFreeLabelOne (String value){
+   SelectManyOptionFreeLabelOne.sendKeys(value);
+}
+
+===================================================
+private String SelectManyOptionInsertNewXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][2]/div[@class='col-sm-6 col-sm-offset-3']/button[@class='btn btn-default grey steps-options-btn']"
+protected CU_WebElement SelectManyOptionInsertNew;
+SelectManyOptionInsertNew = new CU_WebElement("Select Many Option Insert New", By.xpath(SelectManyOptionInsertNewXpath ), driver);
+public void setSelectManyOptionInsertNew (String value){
+   SelectManyOptionInsertNew.click();
+   wHelper.sleep(2);
+}

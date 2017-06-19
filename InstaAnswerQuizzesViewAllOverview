@@ -1,0 +1,65 @@
+private String OverviewStatusXpath = "//select[@id='status']"
+protected CU_WebElement OverviewStatus;
+OverviewStatus = new CU_WebElement("Overview Status", By.xpath(OverviewStatusXpath), driver);
+public void setOverviewStatus (){
+   OverviewStatus.click();
+   wHelper.sleep(2);
+}
+
+private String OverviewShortTitleXpath = "//input[@id='short_title']"
+protected CU_WebElement OverviewShortTitle;
+OverviewShortTitle = new CU_WebElement("Overview Short Title", By.xpath(OverviewShortTitleXpath), driver);
+public void setOverviewShortTitle (String value){
+   OverviewShortTitle .sendKeys(value);
+}
+
+private String OverviewQuizTitleXpath = "//input[@id='title']"
+protected CU_WebElement OverviewQuizTitle;
+OverviewQuizTitle = new CU_WebElement("Overview Quiz Title", By.xpath(OverviewQuizTitleXpath), driver);
+public void setOverviewQuizTitle (String value){
+   OverviewQuizTitle .sendKeys(value);
+}
+
+private String OverviewParentArticleURLXpath = "//div[@class='form-group'][4]/div[@class='col-sm-6']/input[@class='form-control']"
+protected CU_WebElement OverviewParentArticleURL;
+OverviewParentArticleURL = new CU_WebElement("Overview Parent Article URL", By.xpath(OverviewParentArticleURLXpath), driver);
+public void setOverviewParentArticleURL (String value){
+   OverviewParentArticleURL .sendKeys(value);
+}
+
+private String OverviewQuizLengthOneXpath = "//input[@id='quiz_length']"
+protected CU_WebElement OverviewQuizLengthOne;
+OverviewQuizLengthOne = new CU_WebElement("Overview Quiz Length One", By.xpath(OverviewQuizLengthOneXpath), driver);
+public void setOverviewQuizLengthOne (String value){
+   // ??? 
+   OverviewQuizLengthOne.sendKeys(value);
+}
+
+private String OverviewQuizLengthTwoXpath = "//select[@class='form-control']"
+protected CU_WebElement OverviewQuizLengthTwo;
+OverviewQuizLengthTwo = new CU_WebElement("Overview Quiz Length Two", By.xpath(OverviewQuizLengthTwoXpath), driver);
+public void setOverviewQuizLengthTwo (){
+   OverviewQuizLengthTwo.click();
+   wHelper.sleep(2);
+}
+
+private String CreateNewQuizDescriptionXpath = "//div[@class='form-group'][6]/div[@class='col-sm-4']"
+protected CU_WebElement CreateNewQuizDescription;
+CreateNewQuizDescription = new CU_WebElement("Overview Description", By.xpath(CreateNewQuizDescriptionXpath), driver);
+public void setCreateNewQuizDescription (String value){
+   CreateNewQuizDescription .sendKeys(value);
+}
+
+Overview Description
+
+//label[@class='mt-radio'][1]/span
+Show Cover Image No
+
+//label[@class='mt-radio'][2]/span
+Show Cover Image Yes
+
+//div[@class='form-group'][8]/div[@class='col-sm-4']/a
+Generate Responses Link
+
+//div[@class='form-group'][9]/div[@class='col-sm-4']/a
+Remove Generated Responses Link

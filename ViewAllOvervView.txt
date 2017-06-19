@@ -1,0 +1,102 @@
+private String OverviewStatusXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][1]/div[@class='col-sm-4']/select[@id='status']"
+protected CU_WebElement OverviewStatus;
+OverviewStatus = new CU_WebElement("Overview Status", By.xpath(OverviewStatusXpath), driver);
+public void setOverviewStatus (String value){
+   // ??? 
+   OverviewStatus.sendKeys(value);
+}
+
+private String OverviewShortTitleXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][2]/div[@class='col-sm-4']/input[@id='short_title']"
+protected CU_WebElement OverviewShortTitle;
+OverviewShortTitle = new CU_WebElement("Overview Short Title", By.xpath(OverviewShortTitleXpath), driver);
+public void setOverviewShortTitle (String value){
+   OverviewShortTitle.sendKeys(value);
+}
+
+private String OverviewTestTitleXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][3]/div[@class='col-sm-4']/input[@id='title']"
+protected CU_WebElement OverviewTestTitle ;
+OverviewTestTitle = new CU_WebElement("Overview Test Title", By.xpath(OverviewTestTitleXpath), driver);
+public void setOverviewTestTitle (String value){
+   OverviewTestTitle.sendKeys(value);
+}
+
+private String OverviewParentArticleURLXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][4]/div[@class='col-sm-4']/input[@id='parent_article_url']"
+protected CU_WebElement OverviewParentArticleURL ;
+OverviewParentArticleURL = new CU_WebElement("Overview Parent Article URL", By.xpath(OverviewParentArticleURLXpath), driver);
+public void setOverviewParentArticleURL  (String value){
+   OverviewParentArticleURL.sendKeys(value);
+}
+
+private String OverviewTestTypeXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][5]/div[@class='col-sm-4']/select[@id='test_type']"
+protected CU_WebElement OverviewTestType ;
+OverviewTestType = new CU_WebElement("Overview Test Type", By.xpath(OverviewTestTypeXpath), driver);
+public void setOverviewTestType  (String value){
+   // ???
+   OverviewTestType.sendKeys(value);
+}
+
+private String OverviewTestLengthOneXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][6]/div[@class='col-sm-2'][1]/input[@id='test_length']"
+protected CU_WebElement OverviewTestLengthOne ;
+OverviewTestLengthOne = new CU_WebElement("Overview Test Length One", By.xpath(OverviewTestLengthOneXpath), driver);
+public void setOverviewTestLengthOne (String value){
+   // ???
+   OverviewTestLengthOne.sendKeys(value);
+}
+
+private String OverviewTestLengthTwoXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][6]/div[@class='col-sm-2'][2]/select[@class='form-control']"
+protected CU_WebElement OverviewTestLengthTwo ;
+OverviewTestLengthTwo = new CU_WebElement("Overview Test Length Two", By.xpath(OverviewTestLengthTwoXpath), driver);
+public void setOverviewTestLengthTwo (String value){
+   // ???
+   OverviewTestLengthTwo.sendKeys(value);
+}
+
+
+private String OverviewEndDateXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][7]/div[@class='col-sm-4']/input[@id='end_date']"
+protected CU_WebElement OverviewEndDate ;
+OverviewEndDate = new CU_WebElement("Overview End Date", By.xpath(OverviewEndDateXpath), driver);
+public void setOverviewEndDate (String value){
+   // ???
+   OverviewEndDate.sendKeys(value);
+}
+
+private String OverviewEndDateCheckboxXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][7]/div[@class='ongoing-checkbox-container']/label[@class='mt-checkbox']"
+protected CU_WebElement OverviewEndDateCheckbox ;
+OverviewEndDateCheckbox = new CU_WebElement("Overview End Date Checkbox", By.xpath(OverviewEndDateCheckboxXpath), driver);
+public void setOverviewEndDateCheckbox (String value){ 
+	OverviewEndDateCheckbox.click();
+    wHelper.sleep(2);
+}
+
+private String OverviewDescriptionXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][8]/div[@class='col-sm-4']"
+protected CU_WebElement OverviewDescription ;
+OverviewDescription = new CU_WebElement("Overview Description", By.xpath(OverviewDescriptionXpath), driver);
+public void setOverviewDescription (String value){
+   // ???
+   OverviewDescription.sendKeys(value);
+}
+
+private String OverviewDetailPageURLXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][9]/div[@class='col-sm-6']/input[@id='detail_page_url']"
+protected CU_WebElement OverviewDetailPageURL ;
+OverviewDetailPageURL = new CU_WebElement("Overview Detail Page URL", By.xpath(OverviewDetailPageURLXpath), driver);
+public void setOverviewDetailPageURL (String value){
+   OverviewDetailPageURL.sendKeys(value);
+}
+
+
+private String OverviewShowCoverImageRadioButtonNoXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][10]/div[@class='col-sm-6']/div[@class='mt-radio-inline']/label[@class='mt-radio'][1]/span"
+protected CU_WebElement OverviewShowCoverImageRadioButtonNo ;
+OverviewShowCoverImageRadioButtonNo = new CU_WebElement("Overview Show Cover Image Radio Button No", By.xpath(OverviewShowCoverImageRadioButtonNoXpath), driver);
+public void setOverviewShowCoverImageRadioButtonNo (String value){ 
+	FirstImageRemoveUI.click();
+    wHelper.sleep(2);
+}
+
+private String OverviewShowCoverImageRadioButtonYesXpath = "//div[@class='col-xs-12 padded-lr-25']/form[@class='form-horizontal page-edit']/div[@class='form-group'][2]/div[@class='tabbable-line panel-green']/div[@class='tab-content']/div[@id='tab_overview']/div[@class='form-group'][10]/div[@class='col-sm-6']/div[@class='mt-radio-inline']/label[@class='mt-radio'][2]/span"
+protected CU_WebElement OverviewShowCoverImageRadioButtonYes ;
+OverviewShowCoverImageRadioButtonYes = new CU_WebElement("Overview Show Cover Image Radio Button Yes", By.xpath(OverviewShowCoverImageRadioButtonYesXpath), driver);
+public void setOverviewShowCoverImageRadioButtonYes (String value){ 
+	OverviewShowCoverImageRadioButtonYes.click();
+    wHelper.sleep(2);
+}
+

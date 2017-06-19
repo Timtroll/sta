@@ -1,0 +1,32 @@
+//textarea[@id='description']
+QuizStepsStep1:SingleSelectionDescriptionQuestion
+
+//div[@class='col-sm-2']
+QuizStepsStep1:SingleSelectionCheckboxRandomizeOptions
+
+//div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
+QuizStepsStep1:SingleSelectionOptionOne
+
+//div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
+QuizStepsStep1:SingleSelectionOptionOneRadioButtonCorrectAnswer
+
+//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
+QuizStepsStep1:SingleSelectionOptionTwo
+
+//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
+QuizStepsStep1:SingleSelectionOptionTwoRadioButtonCorrectAnswer
+
+//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
+QuizStepsStep1:SingleSelectionOptionThree
+
+//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
+QuizStepsStep1:SingleSelectionOptionThreeRadioButtonCorrectAnswer
+
+//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
+QuizStepsStep1:SingleSelectionOptionFour
+
+//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
+QuizStepsStep1:SingleSelectionOptionFourRadioButtonCorrectAnswer
+
+//div[@class='col-sm-6']
+QuizStepsStep1:SingleSelectionFullAnswer

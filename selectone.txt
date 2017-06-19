@@ -1,0 +1,330 @@
+
+===================================================
+protected CU_WebElement SelectOneDescriptionQuestionXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']"
+SelectOneDescriptionQuestion = new CU_WebElement("Description Question textarea", By.xpath(SelectOneDescriptionQuestionXpath ), driver);
+public void setSelectOneDescriptionQuestion (String value){
+   SelectOneDescriptionQuestion.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectOneRandomizeOptionsXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group']/div[@class='col-sm-2']/div[@class='checkbox-container checkbox-inline']/label/div[@class='checker']/span/input"
+SelectOneRandomizeOptions = new CU_WebElement("Randomize options", By.xpath(SelectOneRandomizeOptionsXpath ), driver);
+public void setRandomizeOptions (String value){
+   SelectOneRandomizeOptions.click();
+   wHelper.sleep(2);
+}
+===================================================
+protected CU_WebElement SelectOneSearchInputOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']"
+SelectOneSearchInputOne = new CU_WebElement("Option 1 input", By.xpath(SelectOneSearchInputOneXpath ), driver);
+public void setSelectOneSearchInputOne (String value){
+   SelectOneSearchInputOne.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneSearchOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+SelectOneSearchOne = new CU_WebElement("Option 1 Search button", By.xpath(SelectOneSearchOneXpath ), driver);
+public void setSelectOneSearchOne (String value){
+   SelectOneSearchOne.click();
+   wHelper.sleep(2);
+}
+
+
+
+
+
+
+
+
+===================================================
+protected CU_WebElement SelectOneOptionOneTextareaXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+SelectOneOptionOneTextarea = new CU_WebElement("Option 1 textarea", By.xpath(SelectOneOptionOneTextareaXpath ), driver);
+public void setSelectOneOptionOneTextarea (String value){
+   SelectOneOptionOneTextarea.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneLabelXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_2']"
+SelectOneOptionOneLabel = new CU_WebElement("Option 1 label textarea", By.xpath(SelectOneOptionOneLabelXpath ), driver);
+public void setSelectOneOptionOneLabel (String value){
+   SelectOneOptionOneLabel.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionOneImageOne = new CU_WebElement("Option 1 image 1", By.xpath(SelectOneOptionOneImageOneXpath ), driver);
+public void setSelectOneOptionOneImageOne (String value){
+// ???
+   SelectOneOptionOneImageOne.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneImageTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionOneImageTwo = new CU_WebElement("Option 1 image 2", By.xpath(SelectOneOptionOneImageTwoXpath ), driver);
+public void setSelectOneOptionOneImageTwo (String value){
+// ???
+   SelectOneOptionOneImageTwo.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneImageFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionOneImageFree = new CU_WebElement("Option 1 image 3", By.xpath(SelectOneOptionOneImageFreeXpath ), driver);
+public void setSelectOneOptionOneImageFree (String value){
+// ???
+   SelectOneOptionOneImageFree.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionOneImageForXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][4]/div[@class='image-block']"
+SelectOneOptionOneImageFor = new CU_WebElement("Option 1 image 4", By.xpath(SelectOneOptionOneImageForXpath ), driver);
+public void setSelectOneOptionOneImageFor (String value){
+// ???
+   SelectOneOptionOneImageFor.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionOneImageLoadMoreXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+SelectOneOptionOneImageLoadMore = new CU_WebElement("Option 1 Load More", By.xpath(SelectOneOptionOneImageLoadMoreXpath ), driver);
+public void setSelectOneOptionOneImageLoadMore (String value){
+   SelectOneOptionOneImageLoadMore.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectOneOptionOneImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionOneImageFive = new CU_WebElement("Option 1 image 5", By.xpath(SelectOneOptionOneImageFiveXpath ), driver);
+public void setSelectOneOptionOneImageFive (String value){
+// ???
+   SelectOneOptionOneImageFive.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneImageSixXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionOneImageSix = new CU_WebElement("Option 1 image 6", By.xpath(SelectOneOptionOneImageSixXpath ), driver);
+public void setSelectOneOptionOneImageSix (String value){
+// ???
+   SelectOneOptionOneImageSix.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionOneImageSevenXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionOneImageSeven = new CU_WebElement("Option 1 image 7", By.xpath(SelectOneOptionOneImageSevenXpath ), driver);
+public void setSelectOneOptionOneImageSeven (String value){
+// ???
+   SelectOneOptionOneImageSeven.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionOneImageEightXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionOneImageEight = new CU_WebElement("Option 1 image 8", By.xpath(SelectOneOptionOneImageEightXpath ), driver);
+public void setSelectOneOptionOneImageEight (String value){
+// ???
+   SelectOneOptionOneImageEight.sendKeys(value);
+}
+
+
+
+
+
+
+
+
+===================================================
+protected CU_WebElement SelectOneSearchInputTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']"
+SelectOneSearchInputTwo = new CU_WebElement("Option 2 search textarea", By.xpath(SelectOneSearchInputTwoXpath ), driver);
+public void setSelectOneSearchInputTwo (String value){
+   SelectOneSearchInputTwo.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneSearchTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+SelectOneSearchTwo = new CU_WebElement("Option 2 search button", By.xpath(SelectOneSearchTwoXpath ), driver);
+public void setSelectOneSearchTwo (String value){
+   SelectOneSearchTwo.click();
+   wHelper.sleep(2);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoTextareaXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+SelectOneOptionTwoTextarea = new CU_WebElement("Option 2 textarea", By.xpath(SelectOneOptionTwoTextareaXpath ), driver);
+public void setSelectOneOptionTwoTextarea (String value){
+   SelectOneOptionTwoTextarea.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoLabelXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_3']"
+SelectOneOptionTwoLabel = new CU_WebElement("Option 2 label textarea", By.xpath(SelectOneOptionTwoLabelXpath ), driver);
+public void setSelectOneOptionTwoLabel (String value){
+   SelectOneOptionTwoLabel.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionTwoImageOne = new CU_WebElement("Option 2 image 1", By.xpath(SelectOneOptionTwoImageOneXpath ), driver);
+public void setSelectOneOptionTwoImageOne (String value){
+// ???
+   SelectOneOptionTwoImageOne.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionTwoImageTwo = new CU_WebElement("Option 2 image 2", By.xpath(SelectOneOptionTwoImageTwoXpath ), driver);
+public void setSelectOneOptionTwoImageTwo (String value){
+// ???
+   SelectOneOptionTwoImageTwo.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionTwoImageFree = new CU_WebElement("Option 2 image 3", By.xpath(SelectOneOptionTwoImageFreeXpath ), driver);
+public void setSelectOneOptionTwoImageFree (String value){
+   SelectOneOptionTwoImageFree.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionTwoImageForXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][4]/div[@class='image-block']"
+SelectOneOptionTwoImageFor = new CU_WebElement("Option 2 image 4", By.xpath(SelectOneOptionTwoImageForXpath ), driver);
+public void setSelectOneOptionTwoImageFor (String value){
+// ???
+  SelectOneOptionTwoImageFor.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionTwoImageLoadMoreXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+SelectOneOptionTwoImageLoadMore = new CU_WebElement("Option 2 Image Load More", By.xpath(SelectOneOptionTwoImageLoadMoreXpath ), driver);
+public void setSelectOneOptionTwoImageLoadMore (String value){
+   SelectOneOptionImageTwoLoadMore.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionTwoImageFive = new CU_WebElement("Option 2 image 5", By.xpath(SelectOneOptionTwoImageFiveXpath ), driver);
+public void setSelectOneOptionTwoImageFive (String value){
+// ???
+   SelectOneOptionTwoImageFive.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageSixXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionTwoImageSix = new CU_WebElement("Option 2 image 6", By.xpath(SelectOneOptionTwoImageSixXpath ), driver);
+public void setSelectOneOptionTwoImageSix (String value){
+// ???
+   SelectOneOptionTwoImageSix.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionTwoImageSevenXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionTwoImageSeven = new CU_WebElement("Option 2 image 7", By.xpath(SelectOneOptionTwoImageSevenXpath ), driver);
+public void setSelectOneOptionTwoImageSeven (String value){
+// ???
+   SelectOneOptionTwoImageSeven.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionTwoImageEightXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][4]/div[@class='image-block']"
+SelectOneOptionTwoImageEight = new CU_WebElement("Option 2 image 8", By.xpath(SelectOneOptionTwoImageEightXpath ), driver);
+public void setSelectOneOptionTwoImageEight (String value){
+// ???
+   SelectOneOptionTwoImageEight.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneInsertNewOptionXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][2]/div[@class='col-sm-6 col-sm-offset-3']/button[@class='btn btn-default grey steps-options-btn']"
+SelectOneInsertNewOption = new CU_WebElement("Insert New Option", By.xpath(SelectOneInsertNewOptionXpath ), driver);
+public void setSelectOneInsertNewOption (String value){
+   SelectOneInsertNewOption.click();
+   wHelper.sleep(2);
+}
+
+
+
+
+
+
+
+
+===================================================
+protected CU_WebElement SelectOneSearchInputFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+SelectOneSearchInputFree = new CU_WebElement("Option 3 textarea", By.xpath(SelectOneSearchInputFreeXpath ), driver);
+public void setSelectOneSearchInputFree (String value){
+   SelectOneSearchInputFree.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneSearchFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+SelectOneSearchFree = new CU_WebElement("Option 3 search button", By.xpath(SelectOneSearchFreeXpath ), driver);
+public void setSelectOneSearchFree (String value){
+   SelectOneSearchFree.click();
+   wHelper.sleep(2);
+}
+===================================================
+protected CU_WebElement SelectOneDeleteOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+SelectOneDeleteOne = new CU_WebElement("Option 3 delete button", By.xpath(SelectOneDeleteOneXpath ), driver);
+public void setSelectOneDeleteOne (String value){
+   SelectOneDeleteOne.click();
+   wHelper.sleep(2);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeTextareaXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+SelectOneOptionFreeTextarea = new CU_WebElement("Option 3 textarea", By.xpath(SelectOneOptionFreeTextareaXpath ), driver);
+public void setSelectOneOptionFreeTextarea (String value){
+   SelectOneOptionFreeTextarea.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeLabelXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description open_text_description_4']"
+SelectOneOptionFreeLabel = new CU_WebElement("Option 3 label textarea", By.xpath(SelectOneOptionFreeLabelXpath ), driver);
+public void setSelectOneOptionFreeLabel (String value){
+   SelectOneOptionFreeLabel.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageOneXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionFreeImageOne = new CU_WebElement("Option 3 image 1", By.xpath(SelectOneOptionFreeImageOneXpath ), driver);
+public void setSelectOneOptionFreeImageOne (String value){
+// ???
+   SelectOneOptionFreeImageOne.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageTwoXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionFreeImageTwo = new CU_WebElement("Option 3 image 2", By.xpath(SelectOneOptionFreeImageTwoXpath ), driver);
+public void setSelectOneOptionFreeImageTwo (String value){
+// ???
+   SelectOneOptionFreeImageTwo.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageFreeXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionFreeImageFree = new CU_WebElement("Option 3 image 3", By.xpath(SelectOneOptionFreeImageFreeXpath ), driver);
+public void setSelectOneOptionFreeImageFree (String value){
+   SelectOneOptionFreeImageFree.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionFreeImageForXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][4]/div[@class='image-block']"
+SelectOneOptionFreeImageFor = new CU_WebElement("Option 3 image 4", By.xpath(SelectOneOptionFreeImageForXpath ), driver);
+public void setSelectOneOptionFreeImageFor (String value){
+// ???
+  SelectOneOptionFreeImageFor.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionFreeImageLoadMoreXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']"
+SelectOneOptionFreeImageLoadMore = new CU_WebElement("Option 3 Image Load More", By.xpath(SelectOneOptionFreeImageLoadMoreXpath ), driver);
+public void setSelectOneOptionFreeImageLoadMore (String value){
+   SelectOneOptionFreeImageLoadMore.click();
+   wHelper.sleep(2);
+}
+
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageFiveXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][1]/div[@class='image-block']"
+SelectOneOptionFreeImageFive = new CU_WebElement("Option 3 image 5", By.xpath(SelectOneOptionFreeImageFiveXpath ), driver);
+public void setSelectOneOptionFreeImageFive (String value){
+// ???
+   SelectOneOptionFreeImageFive.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageSixXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][2]/div[@class='image-block']"
+SelectOneOptionFreeImageSix = new CU_WebElement("Option 3 image 6", By.xpath(SelectOneOptionFreeImageSixXpath ), driver);
+public void setSelectOneOptionFreeImageSix (String value){
+// ???
+   SelectOneOptionFreeImageSix.sendKeys(value);
+}
+===================================================
+protected CU_WebElement SelectOneOptionFreeImageSevenXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][3]/div[@class='image-block']"
+SelectOneOptionFreeImageSeven = new CU_WebElement("Option 3 image 7", By.xpath(SelectOneOptionFreeImageSevenXpath ), driver);
+public void setSelectOneOptionFreeImageSeven (String value){
+// ???
+   SelectOneOptionFreeImageSeven.sendKeys(value);
+}
+================================================
+protected CU_WebElement SelectOneOptionFreeImageEightXpath = "//div[@class='steps sortable ui-sortable']/div[@class='steps-partial']/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='steps-partial-options-container']/div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block'][2]/div[@class='item-container col-sm-3'][4]/div[@class='image-block']"
+SelectOneOptionFreeImageEight = new CU_WebElement("Option 3 image 8", By.xpath(SelectOneOptionFreeImageEightXpath ), driver);
+public void setSelectOneOptionFreeImageEight (String value){
+// ???
+   SelectOneOptionFreeImageEight.sendKeys(value);
+}
+
+
+
+
+
+
+
+
+
+
+

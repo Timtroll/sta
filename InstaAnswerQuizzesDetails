@@ -1,0 +1,29 @@
+private String DetailsCRDetailsRadioButtonNoXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement DetailsCRDetailsRadioButtonNo;
+DetailsCRDetailsRadioButtonNo = new CU_WebElement("Details CR Details Radio Button No", By.xpath(DetailsCRDetailsRadioButtonNoXpath), driver);
+public void setDetailsCRDetailsRadioButtonNo (String value){
+   DetailsCRDetailsRadioButtonNo.click();
+   wHelper.sleep(2);
+}
+
+private String DetailsCRDetailsRadioButtonYesXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement DetailsCRDetailsRadioButtonYes;
+DetailsCRDetailsRadioButtonYes = new CU_WebElement("Details CR Details Radio Button Yes", By.xpath(DetailsCRDetailsRadioButtonYesXpath), driver);
+public void setDetailsCRDetailsRadioButtonYes (String value){
+   DetailsCRDetailsRadioButtonYes.click();
+   wHelper.sleep(2);
+}
+
+private String DetailsDetailsTitleInputXpath = "//input[@id='detail_title_display']"
+protected CU_WebElement DetailsDetailsTitleInput;
+DetailsDetailsTitleInput = new CU_WebElement("Details Details Title Input", By.xpath(DetailsDetailsTitleInputXpath), driver);
+public void setDetailsDetailsTitleInput (String value){
+   DetailsDetailsTitleInput.sendKeys(value);
+}
+
+private String DetailsDetailsTitleTextareaXpath = "//div[@class='form-group utest-cr-detail'][2]/div[@class='col-sm-6']"
+protected CU_WebElement DetailsDetailsTitleTextarea;
+DetailsDetailsTitleTextarea = new CU_WebElement("Details Details Title Textarea", By.xpath(DetailsDetailsTitleInputXpath), driver);
+public void setDetailsDetailsTitleTextarea (String value){
+   DetailsDetailsTitleTextarea.sendKeys(value);
+}
