@@ -92,12 +92,19 @@ public void setOverviewCoverImageRemove (){
 private String OverviewCoverImageImageUnderXpath = "//div[@class='image-preview']"
 protected CU_WebElement OverviewCoverImageImageUnder;
 OverviewCoverImageImageUnder = new CU_WebElement("Overview Cover Image Image Under", By.xpath(OverviewCoverImageImageUnderXpath), driver);
-CR-Money-Hero-May-Deep-Discount-v2-0417
+public void setOverviewCoverImageImageUnder (){
+   OverviewCoverImageImageUnder.click();
+   wHelper.sleep(2);
+}
+
 
 private String OverviewCoverImageImageOverXpath = "//div[@class='cover-preview']"
 protected CU_WebElement OverviewCoverImageImageOver;
 OverviewCoverImageImageOver = new CU_WebElement("Overview Cover Image Image Over", By.xpath(OverviewCoverImageImageOverXpath), driver);
-CR-Money-Hero-May-Deep-Discount-v2-0417
+public void setOverviewCoverImageImageOver (){
+   OverviewCoverImageImageOver.click();
+   wHelper.sleep(2);
+}
 
 private String OverviewGenerateResponsesLinkXpath = "//div[@class='form-group'][8]/div[@class='col-sm-4']/a"
 protected CU_WebElement OverviewGenerateResponsesLink;

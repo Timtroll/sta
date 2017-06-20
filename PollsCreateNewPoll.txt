@@ -22,7 +22,7 @@ public void setCreateNewPollParentArticleURL (String value){
 private String CreateNewPollShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span"
 protected CU_WebElement CreateNewPollShowCoverImageNo;
 CreateNewPollShowCoverImageNo = new CU_WebElement("Create New Poll Show Cover Image No", By.xpath(CreateNewPollShowCoverImageNoXpath), driver);
-public void CreateNewPollShowCoverImageNo (String value){
+public void setCreateNewPollShowCoverImageNo (String value){
    CreateNewPollShowCoverImageNo.click();
    wHelper.sleep(2);
 }

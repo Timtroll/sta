@@ -23,7 +23,7 @@ public void setDetailsDetailsTitleInput (String value){
 
 private String DetailsDetailsTitleTextareaXpath = "//div[@class='form-group utest-cr-detail'][2]/div[@class='col-sm-6']"
 protected CU_WebElement DetailsDetailsTitleTextarea;
-DetailsDetailsTitleTextarea = new CU_WebElement("Details Details Title Textarea", By.xpath(DetailsDetailsTitleInputXpath), driver);
+DetailsDetailsTitleTextarea = new CU_WebElement("Details Details Title Textarea", By.xpath(DetailsDetailsTitleTextareaXpath), driver);
 public void setDetailsDetailsTitleTextarea (String value){
    DetailsDetailsTitleTextarea.sendKeys(value);
 }

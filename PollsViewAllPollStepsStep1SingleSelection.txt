@@ -7,7 +7,7 @@ public void setPollStepsDescriptionQuestion (String value){
 }
 
 private String PollStepsCheckboxRandomizeOptionsXpath = "//div[@class='checkbox-container checkbox-inline']"
-protected CU_WebElement PollStepsCheckboxRandomizeOptionst;
+protected CU_WebElement PollStepsCheckboxRandomizeOptions;
 PollStepsCheckboxRandomizeOptions = new CU_WebElement("Poll Steps Checkbox Randomize Options", By.xpath(PollStepsCheckboxRandomizeOptionsXpath), driver);
 public void setPollStepsCheckboxRandomizeOptions (String value){
    PollStepsCheckboxRandomizeOptions.click();
