@@ -1,32 +1,121 @@
-//textarea[@id='description']
-QuizStepsStep1:SingleSelectionDescriptionQuestion
 
-//div[@class='col-sm-2']
-QuizStepsStep1:SingleSelectionCheckboxRandomizeOptions
+private String QuizStepsStepOneSingleSelectionDescriptionQuestionXpath = "//div[@class='steps-partial'][1]/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionDescriptionQuestion;
+QuizStepsStepOneSingleSelectionDescriptionQuestion = new CU_WebElement("Quiz Steps Step One Single Selection Description Question", By.xpath(QuizStepsStepOneSingleSelectionDescriptionQuestionXpath), driver);
+public void setQuizStepsStepOneSingleSelectionDescriptionQuestion (String value){
+   QuizStepsStepOneSingleSelectionDescriptionQuestion .sendKeys(value);
+}
 
-//div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
-QuizStepsStep1:SingleSelectionOptionOne
+private String QuizStepsStepOneSingleSelectionRandomizeOptionsCheckboxXpath = "//span/input"
+protected CU_WebElement QuizStepsStepOneSingleSelectionRandomizeOptionsCheckbox;
+QuizStepsStepOneSingleSelectionRandomizeOptionsCheckbox = new CU_WebElement("Quiz Steps Step One Single Selection Randomize Options Checkbox", By.xpath(QuizStepsStepOneSingleSelectionRandomizeOptionsCheckboxXpath), driver);
+public void setQuizStepsStepOneSingleSelectionRandomizeOptionsCheckbox (){
+   QuizStepsStepOneSingleSelectionRandomizeOptionsCheckbox.click();
+   wHelper.sleep(2);
+}
 
-//div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
-QuizStepsStep1:SingleSelectionOptionOneRadioButtonCorrectAnswer
+private String QuizStepsStepOneSingleSelectionOptionOneXpath = "//input[@class='form-control always-enabled valid']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionOptionOne;
+QuizStepsStepOneSingleSelectionOptionOne = new CU_WebElement("Quiz Steps Step One Single Selection Option One", By.xpath(QuizStepsStepOneSingleSelectionOptionOneXpath), driver);
+public void setQuizStepsStepOneSingleSelectionOptionOne (String value){
+   QuizStepsStepOneSingleSelectionOptionOne .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
-QuizStepsStep1:SingleSelectionOptionTwo
+private String QuizStepsStepOneSingleSelectionOptionTwoXpath = "//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionOptionTwo;
+QuizStepsStepOneSingleSelectionOptionTwo = new CU_WebElement("Quiz Steps Step One Single Selection Option Two", By.xpath(QuizStepsStepOneSingleSelectionOptionTwoXpath), driver);
+public void setQuizStepsStepOneSingleSelectionOptionTwo (String value){
+   QuizStepsStepOneSingleSelectionOptionTwo .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
-QuizStepsStep1:SingleSelectionOptionTwoRadioButtonCorrectAnswer
+private String QuizStepsStepOneSingleSelectionOptionThreeXpath = "//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionOptionThree;
+QuizStepsStepOneSingleSelectionOptionThree = new CU_WebElement("Quiz Steps Step One Single Selection Option Three", By.xpath(QuizStepsStepOneSingleSelectionOptionThreeXpath), driver);
+public void setQuizStepsStepOneSingleSelectionOptionThree (String value){
+   QuizStepsStepOneSingleSelectionOptionThree .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
-QuizStepsStep1:SingleSelectionOptionThree
+private String QuizStepsStepOneSingleSelectionOptionFourXpath = "//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionOptionFour;
+QuizStepsStepOneSingleSelectionOptionFour = new CU_WebElement("Quiz Steps Step One Single Selection Option Four", By.xpath(QuizStepsStepOneSingleSelectionOptionFourXpath), driver);
+public void setQuizStepsStepOneSingleSelectionOptionFour (String value){
+   QuizStepsStepOneSingleSelectionOptionFour .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][3]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
-QuizStepsStep1:SingleSelectionOptionThreeRadioButtonCorrectAnswer
+private String QuizStepsStepOneSingleSelectionFullAnswerXpath = "//textarea[@id='full_answer']"
+protected CU_WebElement QuizStepsStepOneSingleSelectionFullAnswer;
+QuizStepsStepOneSingleSelectionFullAnswer = new CU_WebElement("Quiz Steps Step One Single Selection Full Answer", By.xpath(QuizStepsStepOneSingleSelectionFullAnswerXpath), driver);
+public void setQuizStepsStepOneSingleSelectionFullAnswer (String value){
+   QuizStepsStepOneSingleSelectionFullAnswer .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/div[@class='col-sm-9']/input[@class='form-control always-enabled valid']
-QuizStepsStep1:SingleSelectionOptionFour
+private String QuizStepsStepTwoSelectOneDescriptionQuestionXpath = "//div[@class='steps sortable']/div[@class='steps-partial'][2]/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][1]/div[@class='col-sm-6 step-description-container']/textarea[@id='description']"
+protected CU_WebElement QuizStepsStepTwoSelectOneDescriptionQuestion;
+QuizStepsStepTwoSelectOneDescriptionQuestion = new CU_WebElement("Quiz Steps Step Two Select One Description Question", By.xpath(QuizStepsStepTwoSelectOneDescriptionQuestionXpath), driver);
+public void setQuizStepsStepTwoSelectOneDescriptionQuestion (String value){
+   QuizStepsStepTwoSelectOneDescriptionQuestion .sendKeys(value);
+}
 
-//div[@class='form-group steps-partial-options'][4]/div[@class='col-sm-6']/div[@class='col-sm-3']/label[@class='mt-radio']
-QuizStepsStep1:SingleSelectionOptionFourRadioButtonCorrectAnswer
+private String QuizStepsStepTwoSelectOneRandomizeOptionsCheckboxXpath = "//span/input"
+protected CU_WebElement QuizStepsStepTwoSelectOneRandomizeOptionsCheckbox;
+QuizStepsStepTwoSelectOneRandomizeOptionsCheckbox = new CU_WebElement("Quiz Steps Step Two Select One Randomize Options Checkbox", By.xpath(QuizStepsStepTwoSelectOneRandomizeOptionsCheckboxXpath), driver);
+public void setQuizStepsStepTwoSelectOneRandomizeOptionsCheckbox (){
+   QuizStepsStepTwoSelectOneRandomizeOptionsCheckbox.click();
+   wHelper.sleep(2);
+}
 
-//div[@class='col-sm-6']
-QuizStepsStep1:SingleSelectionFullAnswer
+private String QuizStepsStepTwoSelectOneOptionOneInputXpath = "//input[@class='form-control search_images_input disabled']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionOneInput;
+QuizStepsStepTwoSelectOneOptionOneInput = new CU_WebElement("Quiz Steps Step Two Select One Option One Input", By.xpath(QuizStepsStepTwoSelectOneOptionOneInputXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionOneInput (){
+   QuizStepsStepTwoSelectOneOptionOneInput.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionOneImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionOneImage;
+QuizStepsStepTwoSelectOneOptionOneImage = new CU_WebElement("Quiz Steps Step Two SelectOne Option One Image", By.xpath(QuizStepsStepTwoSelectOneOptionOneImageXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionOneImage (){
+   QuizStepsStepTwoSelectOneOptionOneImage.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionOneTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionOneTextarea;
+QuizStepsStepTwoSelectOneOptionOneTextarea = new CU_WebElement("Quiz Steps Step Two SelectOne Option One Textarea", By.xpath(QuizStepsStepTwoSelectOneOptionOneTextareaXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionOneTextarea (){
+   QuizStepsStepTwoSelectOneOptionOneTextarea.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionTwoInput = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input disabled']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionTwoInput;
+QuizStepsStepTwoSelectOneOptionTwoInput = new CU_WebElement("Quiz Steps Step Two SelectOne Option Two Input", By.xpath(QuizStepsStepTwoSelectOneOptionTwoInputXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionTwoInput (){
+   QuizStepsStepTwoSelectOneOptionTwoInput.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionTwoImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionTwoImage;
+QuizStepsStepTwoSelectOneOptionTwoImage = new CU_WebElement("Quiz Steps Step Two SelectOne Option Two Image", By.xpath(QuizStepsStepTwoSelectOneOptionTwoImageXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionTwoImage (){
+   QuizStepsStepTwoSelectOneOptionTwoImage.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionTwoTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionTwoTextarea;
+QuizStepsStepTwoSelectOneOptionTwoTextarea = new CU_WebElement("Quiz Steps Step Two SelectOne Option Two Textarea", By.xpath(QuizStepsStepTwoSelectOneOptionTwoTextareaXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionTwoTextarea (){
+   QuizStepsStepTwoSelectOneOptionTwoTextarea.click();
+   wHelper.sleep(2);
+}
+
+private String QuizStepsStepTwoSelectOneOptionTwoFullAnswerXpath = "//div[@class='steps-partial'][2]/div[@class='steps-partial-container clearfix']/div[@class='col-md-12']/div[@class='form-group'][3]/div[@class='col-sm-6']/textarea[@id='full_answer']"
+protected CU_WebElement QuizStepsStepTwoSelectOneOptionTwoFullAnswer;
+QuizStepsStepTwoSelectOneOptionTwoFullAnswer = new CU_WebElement("Quiz Steps Step Two SelectOne Option Two Full Answer", By.xpath(QuizStepsStepTwoSelectOneOptionTwoFullAnswerXpath), driver);
+public void setQuizStepsStepTwoSelectOneOptionTwoFullAnswer (){
+   QuizStepsStepTwoSelectOneOptionTwoFullAnswer.click();
+   wHelper.sleep(2);
+}
