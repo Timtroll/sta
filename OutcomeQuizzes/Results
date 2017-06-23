@@ -1,0 +1,31 @@
+   package core.MembershipPages.OutcomeQuiz.ViewAll;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class OutcomeQuiz extends TestResults{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        ExportCSV = new CU_WebElement("Export CSV",By.xpath(ExportCSVXpath ), driver);
+
+    }
+
+    private CU_WebElement ExportCSV;
+   
+    private String ExportCSVXpath = "//a[@class='btn blue btn-export']";
+
+    public void setExportCSV(){
+        ExportCSV.click();
+    }

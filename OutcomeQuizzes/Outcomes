@@ -1,0 +1,93 @@
+   package core.MembershipPages.OutcomeQuiz.ViewAll;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class OutcomeQuiz extends TestOutcomes{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        OptionOneInputOne = new CU_WebElement("Option One Input One",By.xpath(OptionOneInputOneXpath ), driver);
+        OptionOneSearch = new CU_WebElement("Option One Search",By.xpath(OptionOneSearchXpath ), driver);
+        OptionOneImage = new CU_WebElement("Option One Image",By.xpath(OptionOneImageXpath ), driver);
+        OptionOneInputTwo = new CU_WebElement("Option One Input Two",By.xpath(OptionOneInputTwoXpath ), driver);
+        OptionOne = new CU_WebElement("Option One",By.xpath(OptionOneXpath ), driver);
+        OptionTwoInputOne = new CU_WebElement("Option Two Input One",By.xpath(OptionTwoInputOneXpath ), driver);
+        OptionTwoSearch = new CU_WebElement("Option Two Search",By.xpath(OptionTwoSearchXpath ), driver);
+        OptionTwoImage = new CU_WebElement("Option Two Image",By.xpath(OptionTwoImageXpath ), driver);
+        OptionTwoInputTwo = new CU_WebElement("Option Two Input Two",By.xpath(OptionTwoInputTwoXpath ), driver);
+        OptionTwo = new CU_WebElement("Option Two",By.xpath(OptionTwoXpath ), driver);
+    }
+
+    private CU_WebElement OptionOneInputOne;
+    private CU_WebElement OptionOneSearch;
+    private CU_WebElement OptionOneImage;
+    private CU_WebElement OptionOneInputTwo;
+    private CU_WebElement OptionOne;
+    private CU_WebElement OptionTwoInputOne;
+    private CU_WebElement OptionTwoSearch;
+    private CU_WebElement OptionTwoImage;
+    private CU_WebElement OptionTwoInputTwo;
+    private CU_WebElement OptionTwo;
+
+    private String OptionOneInputOneXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][1]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']";
+    private String OptionOneSearchXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][1]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']";
+    private String OptionOneImageXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][1]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']";
+    private String OptionOneInputTwoXpath = "//input[@class='outcome-category-title form-control always-enabled valid']";
+    private String OptionOneXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][1]/div[@class='form-group'][2]/div[@class='col-sm-4 col-sm-offset-3']";
+    private String OptionTwoInputOneXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][2]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']";
+    private String OptionTwoSearchXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][2]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']";
+    private String OptionTwoImageXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][2]/div[@class='form-group upload-form-group category-partial-options']/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']";
+    private String OptionTwoInputTwoXpath = "//input[@class='outcome-category-title form-control always-enabled']";
+    private String OptionTwoXpath = "//div[@class='form-group upload-form-group category-partial-options category-container is_used'][2]/div[@class='form-group'][2]/div[@class='col-sm-4 col-sm-offset-3']";
+
+    public void setOptionOneInputOne (String value){
+        OptionOneInputOne .sendKeys(value);
+    }
+
+    public void setOptionOneSearch(){
+        OptionOneSearch.click();
+    }
+
+    public void setOptionOneImage(){
+        OptionOneImage.click();
+    }
+
+    public void setOptionOneInputTwo (String value){
+        OptionOneInputTwo .sendKeys(value);
+    }
+
+    public void setOptionOne (String value){
+        OptionOne .sendKeys(value);
+    }
+
+    public void setOptionTwoInputOne (String value){
+        OptionTwoInputOne .sendKeys(value);
+    }
+
+    public void setOptionTwoSearch(){
+        OptionTwoSearch.click();
+    }
+
+    public void setOptionTwoImage(){
+        OptionTwoImage.click();
+    }
+
+    public void setOptionTwoInputTwo (String value){
+        OptionTwoInputTwo .sendKeys(value);
+    }
+
+    public void setOptionTwo (String value){
+        OptionTwo .sendKeys(value);
+    }

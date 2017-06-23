@@ -1,0 +1,52 @@
+   package core.MembershipPages.OutcomeQuiz.ViewAll;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class OutcomeQuiz extends TestEmbedCodes{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        UniversalEmbedModuleDefault = new CU_WebElement("Universal Embed Module Default",By.xpath(UniversalEmbedModuleDefaultXpath ), driver);
+        UniversalEmbedModuleWordPress = new CU_WebElement("Universal Embed Module WordPress",By.xpath(UniversalEmbedModuleWordPressXpath ), driver);
+        UniversalEmbedModule = new CU_WebElement("Universal Embed Module",By.xpath(UniversalEmbedModuleXpath ), driver);
+        UniversalEmbedModuleCopyToClipboard = new CU_WebElement("Universal Embed Module Copy To Clipboard",By.xpath(UniversalEmbedModuleCopyToClipboardXpath ), driver);
+
+    }
+
+    private CU_WebElement UniversalEmbedModuleDefault;
+    private CU_WebElement UniversalEmbedModuleWordPress;
+    private CU_WebElement UniversalEmbedModule;
+    private CU_WebElement UniversalEmbedModuleCopyToClipboard;
+
+    private String UniversalEmbedModuleDefaultXpath = "//label[@class='mt-radio'][1]/span";
+    private String UniversalEmbedModuleWordPressXpath = "//label[@class='mt-radio'][2]/span";
+    private String UniversalEmbedModuleXpath = "//input[@id='detail_title_display']";
+    private String UniversalEmbedModuleCopyToClipboardXpath = "//div[@class='form-group utest-cr-detail']/div[@class='col-sm-6']";
+
+    public void setUniversalEmbedModuleDefault(){
+        UniversalEmbedModuleDefault.click();
+    }
+
+    public void setUniversalEmbedModuleWordPress(){
+        UniversalEmbedModuleWordPress.click();
+    }
+
+    public void setUniversalEmbedModule (String value){
+        UniversalEmbedModule .sendKeys(value);
+    }
+
+    public void setUniversalEmbedModuleCopyToClipboard(){
+        UniversalEmbedModuleCopyToClipboard.click();
+    }

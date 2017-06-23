@@ -1,0 +1,52 @@
+   package core.MembershipPages.OutcomeQuiz.ViewAll;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class OutcomeQuiz extends TestDetails{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        CRDetailsNo = new CU_WebElement("CR Details No",By.xpath(CRDetailsNoXpath ), driver);
+        CRDetailsYes = new CU_WebElement("CR Details Yes",By.xpath(CRDetailsYesXpath ), driver);
+        DetailsTitleInput = new CU_WebElement("Details Title Input",By.xpath(DetailsTitleInputXpath ), driver);
+        DetailsTitle = new CU_WebElement("Details Title",By.xpath(DetailsTitleXpath ), driver);
+
+    }
+
+    private CU_WebElement CRDetailsNo;
+    private CU_WebElement CRDetailsYes;
+    private CU_WebElement DetailsTitle;
+    private CU_WebElement DetailsTitle;
+
+    private String CRDetailsNoXpath = "//label[@class='mt-radio'][1]/span";
+    private String CRDetailsYesXpath = "//label[@class='mt-radio'][2]/span";
+    private String DetailsTitleInputXpath = "//input[@id='detail_title_display']";
+    private String DetailsTitleXpath = "//div[@class='form-group utest-cr-detail']/div[@class='col-sm-6']";
+
+    public void setCRDetailsNo(){
+        CRDetailsNo.click();
+    }
+
+    public void setCRDetailsYes(){
+        CRDetailsYes.click();
+    }
+
+    public void setDetailsTitleInput (String value){
+        DetailsTitleInput .sendKeys(value);
+    }
+
+    public void setDetailsTitle (String value){
+        DetailsTitle .sendKeys(value);
+    }
