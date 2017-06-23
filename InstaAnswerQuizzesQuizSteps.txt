@@ -88,7 +88,7 @@ public void setQuizStepsStepTwoSelectOneOptionOneTextarea (){
    wHelper.sleep(2);
 }
 
-private String QuizStepsStepTwoSelectOneOptionTwoInput = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input disabled']"
+private String QuizStepsStepTwoSelectOneOptionTwoInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input disabled']"
 protected CU_WebElement QuizStepsStepTwoSelectOneOptionTwoInput;
 QuizStepsStepTwoSelectOneOptionTwoInput = new CU_WebElement("Quiz Steps Step Two SelectOne Option Two Input", By.xpath(QuizStepsStepTwoSelectOneOptionTwoInputXpath), driver);
 public void setQuizStepsStepTwoSelectOneOptionTwoInput (){

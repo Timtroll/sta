@@ -1,3 +1,4 @@
+
 private String OverviewStatusXpath = "//select[@id='status']"
 protected CU_WebElement OverviewStatus;
 OverviewStatus = new CU_WebElement("Overview Status", By.xpath(OverviewStatusXpath), driver);
@@ -43,23 +44,41 @@ public void setOverviewQuizLengthTwo (){
    wHelper.sleep(2);
 }
 
-private String CreateNewQuizDescriptionXpath = "//div[@class='form-group'][6]/div[@class='col-sm-4']"
-protected CU_WebElement CreateNewQuizDescription;
-CreateNewQuizDescription = new CU_WebElement("Overview Description", By.xpath(CreateNewQuizDescriptionXpath), driver);
-public void setCreateNewQuizDescription (String value){
-   CreateNewQuizDescription .sendKeys(value);
+private String OverviewDescriptionXpath = "//div[@class='form-group'][6]/div[@class='col-sm-4']"
+protected CU_WebElement OverviewDescription;
+OverviewDescription = new CU_WebElement("Overview Description", By.xpath(OverviewDescriptionXpath), driver);
+public void setOverviewDescription (String value){
+   OverviewDescription .sendKeys(value);
 }
 
-Overview Description
+private String OverviewShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span"
+protected CU_WebElement OverviewShowCoverImageNo;
+OverviewShowCoverImageNo = new CU_WebElement("Overview Show Cover Image No", By.xpath(OverviewShowCoverImageNoXpath), driver);
+public void setOverviewShowCoverImageNo (){
+   OverviewShowCoverImageNo.click();
+   wHelper.sleep(2);
+}
 
-//label[@class='mt-radio'][1]/span
-Show Cover Image No
+private String OverviewShowCoverImageYesXpath = "//label[@class='mt-radio'][2]/span"
+protected CU_WebElement OverviewShowCoverImageYes;
+OverviewShowCoverImageYes = new CU_WebElement("Overview Show Cover Image Yes", By.xpath(OverviewShowCoverImageYesXpath), driver);
+public void setOverviewShowCoverImageYes (){
+   OverviewShowCoverImageYes.click();
+   wHelper.sleep(2);
+}
 
-//label[@class='mt-radio'][2]/span
-Show Cover Image Yes
+private String OverviewGenerateResponsesLinkXpath = "//div[@class='form-group'][8]/div[@class='col-sm-4']/a"
+protected CU_WebElement OverviewGenerateResponsesLink;
+OverviewGenerateResponsesLink = new CU_WebElement("Overview Generate Responses Link", By.xpath(OverviewGenerateResponsesLinkXpath), driver);
+public void setOverviewGenerateResponsesLink (){
+   OverviewGenerateResponsesLink.click();
+   wHelper.sleep(2);
+}
 
-//div[@class='form-group'][8]/div[@class='col-sm-4']/a
-Generate Responses Link
-
-//div[@class='form-group'][9]/div[@class='col-sm-4']/a
-Remove Generated Responses Link
+private String OverviewRemoveGeneratedResponsesLinkXpath = "//div[@class='form-group'][9]/div[@class='col-sm-4']/a"
+protected CU_WebElement OverviewRemoveGeneratedResponsesLink;
+OverviewRemoveGeneratedResponsesLink = new CU_WebElement("Overview Remove Generate Responses Link", By.xpath(OverviewRemoveGeneratedResponsesLinkXpath), driver);
+public void setOverviewRemoveGeneratedResponsesLink (){
+   OverviewRemoveGeneratedResponsesLink.click();
+   wHelper.sleep(2);
+}

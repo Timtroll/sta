@@ -1,0 +1,226 @@
+private String PollStepsAddStepSelectOneImageDescriptionQuestionXpath = "//textarea[@id='description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageDescriptionQuestion;
+PollStepsAddStepSelectOneImageDescriptionQuestion = new CU_WebElement("Poll Steps Add Step Select One Image Description Question", By.xpath(PollStepsAddStepSelectOneImageDescriptionQuestionXpath), driver);
+public void setPollStepsAddStepSelectOneImageDescriptionQuestion (String value){
+   PollStepsAddStepSelectOneImageDescriptionQuestion.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageRandomizeOptionsCheckboxXpath = "//span/input"
+protected CU_WebElement PollStepsAddStepSelectOneImageRandomizeOptionsCheckbox;
+PollStepsAddStepSelectOneImageRandomizeOptionsCheckbox = new CU_WebElement("Poll Steps Add Step Select One Image Randomize Options Checkbox", By.xpath(PollStepsAddStepSelectOneImageRandomizeOptionsCheckboxXpath), driver);
+public void setPollStepsAddStepSelectOneImageRandomizeOptionsCheckbox (){
+   PollStepsAddStepSelectOneImageRandomizeOptionsCheckbox.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionOneInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionOneInput;
+PollStepsAddStepSelectOneImageOptionOneInput = new CU_WebElement("Poll Steps Add Step Select One Image Option One Input", By.xpath(PollStepsAddStepSelectOneImageOptionOneInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionOneInput (String value){
+   PollStepsAddStepSelectOneImageOptionOneInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionOneSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionOneSearch;
+PollStepsAddStepSelectOneImageOptionOneSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option One Search", By.xpath(PollStepsAddStepSelectOneImageOptionOneSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionOneSearch (){
+   PollStepsAddStepSelectOneImageOptionOneSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionOneImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionOneImage;
+PollStepsAddStepSelectOneImageOptionOneImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option One Image", By.xpath(PollStepsAddStepSelectOneImageOptionOneImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionOneImage (){
+   PollStepsAddStepSelectOneImageOptionOneImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionOneTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionOneTextarea;
+PollStepsAddStepSelectOneImageOptionOneTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option One Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionOneTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionOneTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionOneTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionTwoInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionTwoInput;
+PollStepsAddStepSelectOneImageOptionTwoInput = new CU_WebElement("Poll Steps Add Step Select One Image Option Two Input", By.xpath(PollStepsAddStepSelectOneImageOptionTwoInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionTwoInput (String value){
+   PollStepsAddStepSelectOneImageOptionTwoInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionTwoSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionTwoSearch;
+PollStepsAddStepSelectOneImageOptionTwoSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option Two Search", By.xpath(PollStepsAddStepSelectOneImageOptionTwoSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionTwoSearch (){
+   PollStepsAddStepSelectOneImageOptionTwoSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionTwoImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionTwoImage;
+PollStepsAddStepSelectOneImageOptionTwoImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option Two Image", By.xpath(PollStepsAddStepSelectOneImageOptionTwoImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionTwoImage (){
+   PollStepsAddStepSelectOneImageOptionTwoImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionTwoTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionTwoTextarea;
+PollStepsAddStepSelectOneImageOptionTwoTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option Two Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionTwoTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionTwoTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionTwoTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionThreeInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionThreeInput;
+PollStepsAddStepSelectOneImageOptionThreeInput = new CU_WebElement("Poll Steps Add Step Select One Image Option Three Input", By.xpath(PollStepsAddStepSelectOneImageOptionThreeInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionThreeInput (String value){
+   PollStepsAddStepSelectOneImageOptionThreeInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionThreeSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionThreeSearch;
+PollStepsAddStepSelectOneImageOptionThreeSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option Three Search", By.xpath(PollStepsAddStepSelectOneImageOptionThreeSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionThreeSearch (){
+   PollStepsAddStepSelectOneImageOptionThreeSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionThreeImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionThreeImage;
+PollStepsAddStepSelectOneImageOptionThreeImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option Three Image", By.xpath(PollStepsAddStepSelectOneImageOptionThreeImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionThreeImage (){
+   PollStepsAddStepSelectOneImageOptionThreeImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionThreeTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionThreeTextarea;
+PollStepsAddStepSelectOneImageOptionThreeTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option Three Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionThreeTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionThreeTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionThreeTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionThreeRemoveXpath = "//div[@class='form-group upload-form-group steps-partial-options'][3]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionThreeRemove;
+PollStepsAddStepSelectOneImageOptionThreeRemove = new CU_WebElement("Poll Steps Add Step Select One Image Option Three Remove", By.xpath(PollStepsAddStepSelectOneImageOptionThreeRemoveXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionThreeRemove (){
+   PollStepsAddStepSelectOneImageOptionThreeRemove.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFourInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][4]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFourInput;
+PollStepsAddStepSelectOneImageOptionFourInput = new CU_WebElement("Poll Steps Add Step Select One Image Option Four Input", By.xpath(PollStepsAddStepSelectOneImageOptionFourInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFourInput (String value){
+   PollStepsAddStepSelectOneImageOptionFourInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFourSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][4]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFourSearch;
+PollStepsAddStepSelectOneImageOptionFourSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option Four Search", By.xpath(PollStepsAddStepSelectOneImageOptionFourSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFourSearch (){
+   PollStepsAddStepSelectOneImageOptionFourSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFourImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][4]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFourImage;
+PollStepsAddStepSelectOneImageOptionFourImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option Four Image", By.xpath(PollStepsAddStepSelectOneImageOptionFourImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFourImage (){
+   PollStepsAddStepSelectOneImageOptionFourImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFourTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][4]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFourTextarea;
+PollStepsAddStepSelectOneImageOptionFourTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option Four Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionFourTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFourTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionFourTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFourRemoveXpath = "//div[@class='form-group upload-form-group steps-partial-options'][4]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFourRemove;
+PollStepsAddStepSelectOneImageOptionFourRemove = new CU_WebElement("Poll Steps Add Step Select One Image Option Four Remove", By.xpath(PollStepsAddStepSelectOneImageOptionFourRemoveXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFourRemove (){
+   PollStepsAddStepSelectOneImageOptionFourRemove.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFiveInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][5]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFiveInput;
+PollStepsAddStepSelectOneImageOptionFiveInput = new CU_WebElement("Poll Steps Add Step Select One Image Option Five Input", By.xpath(PollStepsAddStepSelectOneImageOptionFiveInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFiveInput (String value){
+   PollStepsAddStepSelectOneImageOptionFiveInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFiveSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][5]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFiveSearch;
+PollStepsAddStepSelectOneImageOptionFiveSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option Five Search", By.xpath(PollStepsAddStepSelectOneImageOptionFiveSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFiveSearch (){
+   PollStepsAddStepSelectOneImageOptionFiveSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFiveImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][5]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFiveImage;
+PollStepsAddStepSelectOneImageOptionFiveImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option Five Image", By.xpath(PollStepsAddStepSelectOneImageOptionFiveImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFiveImage (){
+   PollStepsAddStepSelectOneImageOptionFiveImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFiveTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][5]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFiveTextarea;
+PollStepsAddStepSelectOneImageOptionFiveTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option Five Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionFiveTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFiveTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionFiveTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionFiveRemoveXpath = "//div[@class='form-group upload-form-group steps-partial-options'][5]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionFiveRemove;
+PollStepsAddStepSelectOneImageOptionFiveRemove = new CU_WebElement("Poll Steps Add Step Select One Image Option Five Remove", By.xpath(PollStepsAddStepSelectOneImageOptionFiveRemoveXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionFiveRemove (){
+   PollStepsAddStepSelectOneImageOptionFiveRemove.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionSixInputXpath = "//div[@class='form-group upload-form-group steps-partial-options'][6]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionSixInput;
+PollStepsAddStepSelectOneImageOptionSixInput = new CU_WebElement("Poll Steps Add Step Select One Image Option Six Input", By.xpath(PollStepsAddStepSelectOneImageOptionSixInputXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionSixInput (String value){
+   PollStepsAddStepSelectOneImageOptionSixInput.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionSixSearchXpath = "//div[@class='form-group upload-form-group steps-partial-options'][6]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionSixSearch;
+PollStepsAddStepSelectOneImageOptionSixSearch = new CU_WebElement("Poll Steps Add Step Select One Image Option Six Search", By.xpath(PollStepsAddStepSelectOneImageOptionSixSearchXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionSixSearch (){
+   PollStepsAddStepSelectOneImageOptionSixSearch.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionSixImageXpath = "//div[@class='form-group upload-form-group steps-partial-options'][6]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionSixImage;
+PollStepsAddStepSelectOneImageOptionSixImage = new CU_WebElement("Poll Steps Add Step Select One Image  Option Six Image", By.xpath(PollStepsAddStepSelectOneImageOptionSixImageXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionSixImage (){
+   PollStepsAddStepSelectOneImageOptionSixImage.click();
+   wHelper.sleep(2);
+}
+
+private String PollStepsAddStepSelectOneImageOptionSixTextareaXpath = "//div[@class='form-group upload-form-group steps-partial-options'][6]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionSixTextarea;
+PollStepsAddStepSelectOneImageOptionSixTextarea = new CU_WebElement("Poll Steps Add Step Select One Image Option Six Textarea", By.xpath(PollStepsAddStepSelectOneImageOptionSixTextareaXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionSixTextarea (String value){
+   PollStepsAddStepSelectOneImageOptionSixTextarea.sendKeys(value);
+}
+
+private String PollStepsAddStepSelectOneImageOptionSixRemoveXpath = "//div[@class='form-group upload-form-group steps-partial-options'][6]/div[@class='form-group'][1]/div[@class='col-sm-1 remove-category-container']/button[@class='btn btn-default red btn-remove-category-option']"
+protected CU_WebElement PollStepsAddStepSelectOneImageOptionSixRemove;
+PollStepsAddStepSelectOneImageOptionSixRemove = new CU_WebElement("Poll Steps Add Step Select One Image Option Six Remove", By.xpath(PollStepsAddStepSelectOneImageOptionSixRemoveXpath), driver);
+public void setPollStepsAddStepSelectOneImageOptionSixRemove (){
+   PollStepsAddStepSelectOneImageOptionSixRemove.click();
+   wHelper.sleep(2);
+}
