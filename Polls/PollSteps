@@ -1,0 +1,164 @@
+   package core.MembershipPages.Polls.PollSteps;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class CreateNewQuiz extends TestPollSteps{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        AddStepSingleSelectionDescriptionQuestion = new CU_WebElement("Add Step Single Selection Description Question",By.xpath(AddStepSingleSelectionDescriptionQuestionXpath ), driver);
+        AddStepSingleSelectionRandomizeOptions = new CU_WebElement("Add Step Single Selection Randomize Options",By.xpath(AddStepSingleSelectionRandomizeOptionsXpath ), driver);
+        AddStepSingleSelectionOptionOne = new CU_WebElement("Add Step Single Selection Option One",By.xpath(AddStepSingleSelectionOptionOneXpath ), driver);
+        AddStepSingleSelectionOptionTwo = new CU_WebElement("Add Step Single Selection Option Two",By.xpath(AddStepSingleSelectionOptionTwoXpath ), driver);
+        AddStepSingleSelectionInsertNew = new CU_WebElement("Add Step Single Selection Insert New",By.xpath(AddStepSingleSelectionInsertNewXpath ), driver);
+        AddStepSelectOneImageDescriptionQuestion = new CU_WebElement("Add Step Select One Image Description Question",By.xpath(AddStepSelectOneImageDescriptionQuestionXpath ), driver);
+        AddStepSelectOneImageRandomizeOptions = new CU_WebElement("Add Step Select One Image Randomize Options",By.xpath(AddStepSelectOneImageRandomizeOptionsXpath ), driver);
+        AddStepSelectOneImageOptionOneInputOne = new CU_WebElement("Add Step Select One Image Option One Input One",By.xpath(AddStepSelectOneImageOptionOneInputOneXpath ), driver);
+        AddStepSelectOneImageOptionOneSearchOne = new CU_WebElement("Add Step Select One Image Option One Search One",By.xpath(AddStepSelectOneImageOptionOneSearchOneXpath ), driver);
+        AddStepSelectOneImageOptionOneImageOne = new CU_WebElement("Add Step Select One Image Option One Image One",By.xpath(AddStepSelectOneImageOptionOneImageOneXpath ), driver);
+        AddStepSelectOneImageOptionOneTextareaOne = new CU_WebElement("Add Step Select One Image Option One Textarea One",By.xpath(AddStepSelectOneImageOptionOneTextareaOneXpath ), driver);
+        AddStepSelectOneImageOptionOnePictureOne = new CU_WebElement("Add Step Select One Image Option One Picture One",By.xpath(AddStepSelectOneImageOptionOnePictureOneXpath ), driver);
+        AddStepSelectOneImageOptionOneLoadMoreOne = new CU_WebElement("Add Step Select One Image Option One Load More One",By.xpath(AddStepSelectOneImageOptionOneLoadMoreOneXpath ), driver);
+        AddStepSelectOneImageOptionTwoInputTwo = new CU_WebElement("Add Step Select One Image Option Two Input Two",By.xpath(AddStepSelectOneImageOptionTwoInputTwoXpath ), driver);
+        AddStepSelectOneImageOptionTwoSearchTwo = new CU_WebElement("Add Step Select One Image Option Two Search Two",By.xpath(AddStepSelectOneImageOptionTwoSearchTwoXpath ), driver);
+        AddStepSelectOneImageOptionTwoImageTwo = new CU_WebElement("Add Step Select One Image Option Two Image Two",By.xpath(AddStepSelectOneImageOptionTwoImageTwoXpath ), driver);
+        AddStepSelectOneImageOptionTwoTextareaTwo = new CU_WebElement("Add Step Select One Image Option Two Textarea Two",By.xpath(AddStepSelectOneImageOptionTwoTextareaTwoXpath ), driver);
+        AddStepSelectOneImageOptionTwoPictureTwo = new CU_WebElement("Add Step Select One Image Option Two Picture Two",By.xpath(AddStepSelectOneImageOptionTwoPictureTwoXpath ), driver);
+        AddStepSelectOneImageOptionTwoLoadMoreTwo = new CU_WebElement("Add Step Select One Image Option Two Load More Two",By.xpath(AddStepSelectOneImageOptionTwoLoadMoreTwoXpath ), driver);
+        AddStepSelectOneImageInsertNew = new CU_WebElement("Add Step Select One Image Insert New",By.xpath(AddStepSelectOneImageInsertNewXpath ), driver);
+
+    }
+
+    private CU_WebElement AddStepSingleSelectionDescriptionQuestion;
+    private CU_WebElement AddStepSingleSelectionRandomizeOptions;
+    private CU_WebElement AddStepSingleSelectionOptionOne;
+    private CU_WebElement AddStepSingleSelectionOptionTwo;
+    private CU_WebElement AddStepSingleSelectionInsertNew;
+    private CU_WebElement AddStepSelectOneImageDescriptionQuestion;
+    private CU_WebElement AddStepSelectOneImageRandomizeOptions;
+    private CU_WebElement AddStepSelectOneImageOptionOneInputOne;
+    private CU_WebElement AddStepSelectOneImageOptionOneSearchOne;
+    private CU_WebElement AddStepSelectOneImageOptionOneImageOne;
+    private CU_WebElement AddStepSelectOneImageOptionOneTextareaOne;
+    private CU_WebElement AddStepSelectOneImageOptionOnePictureOne;
+    private CU_WebElement AddStepSelectOneImageOptionOneLoadMoreOne;
+    private CU_WebElement AddStepSelectOneImageOptionTwoInputTwo;
+    private CU_WebElement AddStepSelectOneImageOptionTwoSearchTwo;
+    private CU_WebElement AddStepSelectOneImageOptionTwoImageTwo;
+    private CU_WebElement AddStepSelectOneImageOptionTwoTextareaTwo;
+    private CU_WebElement AddStepSelectOneImageOptionTwoPictureTwo;
+    private CU_WebElement AddStepSelectOneImageOptionTwoLoadMoreTwo;
+    private CU_WebElement AddStepSelectOneImageInsertNew;
+
+    private String AddStepSingleSelectionDescriptionQuestionXpath = "//textarea[@id='description']";
+    private String AddStepSingleSelectionRandomizeOptionsXpath = "//span/input";
+    private String AddStepSingleSelectionOptionOneXpath = "//div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-6']/input[@class='form-control always-enabled']";
+    private String AddStepSingleSelectionOptionTwoXpath = "//div[@class='form-group steps-partial-options'][2]/div[@class='col-sm-6']/input[@class='form-control always-enabled']";
+    private String AddStepSingleSelectionInsertNewXpath = "//button[@class='btn btn-default grey steps-options-btn']";
+    private String AddStepSelectOneImageDescriptionQuestionXpath = "//textarea[@id='description']";
+    private String AddStepSelectOneImageRandomizeOptionsXpath = "//span/input";
+    private String AddStepSelectOneImageOptionOneInputOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']";
+    private String AddStepSelectOneImageOptionOneSearchOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']";
+    private String AddStepSelectOneImageOptionOneImageOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']";
+    private String AddStepSelectOneImageOptionOneTextareaOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']";
+    private String AddStepSelectOneImageOptionOnePictureOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']";
+    private String AddStepSelectOneImageOptionOneLoadMoreOneXpath = "//div[@class='form-group upload-form-group steps-partial-options'][1]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']";
+    private String AddStepSelectOneImageOptionTwoInputTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-4']/div[@class='image-container']/input[@class='form-control search_images_input valid']";
+    private String AddStepSelectOneImageOptionTwoSearchTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][1]/div[@class='col-sm-2']/div/input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin']";
+    private String AddStepSelectOneImageOptionTwoImageTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][2]/div[@class='col-sm-4']/div[@class='preview-container']/div[@class='image-preview']";
+    private String AddStepSelectOneImageOptionTwoTextareaTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][3]/div[@class='col-sm-4 col-sm-offset-3']/textarea[@class='form-control always-enabled image_description']";
+    private String AddStepSelectOneImageOptionTwoPictureTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-5 search_images']/div[@class='col-sm-12 parent-block']/div[@class='item-container col-sm-3'][1]/div[@class='image-block']";
+    private String AddStepSelectOneImageOptionTwoLoadMoreTwoXpath = "//div[@class='form-group upload-form-group steps-partial-options'][2]/div[@class='form-group'][4]/div[@class='col-sm-10 col-sm-offset-4']/div/input[@class='btn h2 btn-load-more-image']";
+    private String AddStepSelectOneImageInsertNewXpath = "//button[@class='btn btn-default grey steps-options-btn']";
+
+    public void setAddStepSingleSelectionDescriptionQuestion (String value){
+        AddStepSingleSelectionDescriptionQuestion .sendKeys(value);
+    }
+
+    public void setAddStepSingleSelectionRandomizeOptions(){
+        AddStepSingleSelectionRandomizeOptions.click();
+    }
+
+    public void setAddStepSingleSelectionOptionOne (String value){
+        AddStepSingleSelectionOptionOne .sendKeys(value);
+    }
+
+    public void setAddStepSingleSelectionOptionTwo (String value){
+        AddStepSingleSelectionOptionTwo .sendKeys(value);
+    }
+
+    public void setAddStepSingleSelectionInsertNew(){
+        AddStepSingleSelectionInsertNew.click();
+    }
+
+    public void setAddStepSelectOneImageDescriptionQuestion (String value){
+        AddStepSelectOneImageDescriptionQuestion .sendKeys(value);
+    }
+
+    public void setAddStepSelectOneImageRandomizeOptions(){
+        AddStepSelectOneImageRandomizeOptions.click();
+    }
+
+    public void setAddStepSelectOneImageOptionOneInputOne (String value){
+        AddStepSelectOneImageOptionOneInputOne .sendKeys(value);
+    }
+
+    public void setAddStepSelectOneImageOptionOneSearchOne(){
+        AddStepSelectOneImageOptionOneSearchOne.click();
+    }
+
+    public void setAddStepSelectOneImageOptionOneImageOne(){
+        AddStepSelectOneImageOptionOneImageOne.click();
+    }
+
+    public void setAddStepSelectOneImageOptionOneTextareaOne (String value){
+        AddStepSelectOneImageOptionOneTextareaOne .sendKeys(value);
+    }
+
+    public void setAddStepSelectOneImageOptionOnePictureOne(){
+        AddStepSelectOneImageOptionOnePictureOne.click();
+    }
+
+    public void setAddStepSelectOneImageOptionOneLoadMoreOne(){
+        AddStepSelectOneImageOptionOneLoadMoreOne.click();
+    }
+
+    public void setAddStepSelectOneImageOptionTwoInputTwo (String value){
+        AddStepSelectOneImageOptionTwoInputTwo .sendKeys(value);
+    }
+
+    public void setAddStepSelectOneImageOptionTwoSearchTwo(){
+        AddStepSelectOneImageOptionTwoSearchTwo.click();
+    }
+
+    public void setAddStepSelectOneImageOptionTwoImageTwo(){
+        AddStepSelectOneImageOptionTwoImageTwo.click();
+    }
+
+    public void setAddStepSelectOneImageOptionTwoTextareaTwo (String value){
+        AddStepSelectOneImageOptionTwoTextareaTwo .sendKeys(value);
+    }
+
+    public void setAddStepSelectOneImageOptionTwoPictureTwo(){
+        AddStepSelectOneImageOptionTwoPictureTwo.click();
+    }
+
+    public void setAddStepSelectOneImageOptionTwoLoadMoreTwo(){
+        AddStepSelectOneImageOptionTwoLoadMoreTwo.click();
+    }
+
+    public void setAddStepSelectOneImageInsertNew(){
+        AddStepSelectOneImageInsertNew.click();
+    }

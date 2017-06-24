@@ -1,0 +1,60 @@
+   package core.MembershipPages.OutcomeQuiz.ViewAll;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class OutcomeQuiz extends TestQuizSteps{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        DescriptionQuestion = new CU_WebElement("Description Question",By.xpath(DescriptionQuestionXpath ), driver);
+        OptionOne = new CU_WebElement("Option One",By.xpath(OptionOneXpath ), driver);
+        OptionOneSelect = new CU_WebElement("Option One Select",By.xpath(OptionOneSelectXpath ), driver);
+        OptionTwo = new CU_WebElement("Option Two",By.xpath(OptionTwoXpath ), driver);
+        OptionTwoSelect = new CU_WebElement("Option Two Select",By.xpath(OptionTwoSelectXpath ), driver);
+
+    }
+
+    private CU_WebElement DescriptionQuestion;
+    private CU_WebElement OptionOne;
+    private CU_WebElement OptionOneSelect;
+    private CU_WebElement OptionTwo;
+    private CU_WebElement OptionTwoSelect;
+
+    private String DescriptionQuestionXpath = "//textarea[@id='description']";
+    private String OptionOneXpath = "//div[@class='form-group steps-partial-options'][1]/div[@class='col-sm-8 form-group']/div[@class='col-sm-9']/input[@class='form-control always-enabled']";
+    private String OptionOneSelectXpath = "//select[@class='outcome-category-list valid']";
+    private String OptionTwoXpath = "//input[@class='form-control always-enabled']";
+    private String OptionTwoSelectXpath = "//select[@class='outcome-category-list']";
+
+
+    public void setDescriptionQuestion (String value){
+        DescriptionQuestion .sendKeys(value);
+    }
+
+    public void setOptionOne (String value){
+        OptionOne .sendKeys(value);
+    }
+
+    public void setOptionOneSelect(){
+        OptionOneSelect.click();
+    }
+
+    public void setOptionTwo (String value){
+        OptionTwo .sendKeys(value);
+    }
+
+    public void setOptionTwoSelect(){
+        OptionTwoSelect.click();
+    }

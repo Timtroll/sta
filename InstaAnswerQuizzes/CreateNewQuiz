@@ -1,0 +1,115 @@
+   package core.MembershipPages.InstaAnswerQuizzes.CreateNewQuiz;
+
+import core.helpers.WaitHelper;
+import framework.cuCore.CUDriver;
+import framework.cuCore.CU_WebElement;
+import org.openqa.selenium.By;
+
+/**
+ * Created by Stanislav_Variukhno on 6/18/2017.
+ */
+public class CreateNewQuiz extends TestCreateNewQuiz{
+
+    CUDriver Driver;
+    WaitHelper wHelper ;
+
+    public SelectOneImage (CUDriver driver) {
+        super(driver);
+        Driver = driver;
+        wHelper=new WaitHelper(driver);
+
+        ShortTitle = new CU_WebElement("Short Title",By.xpath(ShortTitleXpath ), driver);
+        QuizTitle = new CU_WebElement("Quiz Title",By.xpath(QuizTitleXpath ), driver);
+        ParentArticleURL = new CU_WebElement("Parent Article URL",By.xpath(ParentArticleURLXpath ), driver);
+        QuizLengthOne = new CU_WebElement("Quiz Length One",By.xpath(QuizLengthOneXpath ), driver);
+        QuizLengthTwo = new CU_WebElement("Quiz Length Two",By.xpath(QuizLengthTwoXpath ), driver);
+        Description = new CU_WebElement("Description",By.xpath(DescriptionXpath ), driver);
+        ShowCoverImageNo = new CU_WebElement("Show Cover Image No",By.xpath(ShowCoverImageNoXpath ), driver);
+        ShowCoverImageYes = new CU_WebElement("Show Cover Image Yes",By.xpath(ShowCoverImageYesXpath ), driver);
+        CoverImageInput = new CU_WebElement("Cover Image Input",By.xpath(CoverImageInputXpath ), driver);
+        CoverImageSearch = new CU_WebElement("Cover Image Search",By.xpath(CoverImageSearchXpath ), driver);
+        CoverImageRemove = new CU_WebElement("Cover Image Remove",By.xpath(CoverImageRemoveXpath ), driver);
+        CoverImageImageUnder = new CU_WebElement("Cover Image Image Under",By.xpath(CoverImageImageUnderXpath ), driver);
+        CoverImageImageOver = new CU_WebElement("Cover Image Image Over",By.xpath(CoverImageImageOverXpath ), driver);
+
+    }
+
+    private CU_WebElement ShortTitle;
+    private CU_WebElement QuizTitle;
+    private CU_WebElement ParentArticleURL;
+    private CU_WebElement QuizLengthOne;
+    private CU_WebElement QuizLengthTwo;
+    private CU_WebElement Description;
+    private CU_WebElement ShowCoverImageNo;
+    private CU_WebElement ShowCoverImageYes;
+    private CU_WebElement CoverImageInput;
+    private CU_WebElement CoverImageSearch;
+    private CU_WebElement CoverImageRemove;
+    private CU_WebElement CoverImageImageUnder;
+    private CU_WebElement CoverImageImageOver;
+
+    private String ShortTitleXpath = "//div[@class='form-group padding-top-20'][1]/div[@class='col-sm-6']/input[@class='form-control']";
+    private String QuizTitleXpath = "//input[@id='title']";
+    private String ParentArticleURLXpath = "//div[@class='form-group padding-top-20'][3]/div[@class='col-sm-6']/input[@class='form-control']";
+    private String QuizLengthOneXpath = "//input[@id='quiz_length']";
+    private String QuizLengthTwoXpath = "//select[@class='form-control valid']";
+    private String DescriptionXpath = "//div[@class='form-group'][3]/div[@class='col-sm-6']";
+    private String ShowCoverImageNoXpath = "//label[@class='mt-radio'][1]/span";
+    private String ShowCoverImageYesXpath = "//label[@class='mt-radio'][2]/span";
+    private String CoverImageInputXpath = "//input[@class='form-control search_images_input']";
+    private String CoverImageSearchXpath = "//input[@class='btn h2 btn_cloudinary btn_search_images no-top-margin has-image']";
+    private String CoverImageRemoveXpath = "//input[@class='btn h2 btn_cloudinary btn-remove-cld-image no-top-margin']";
+    private String CoverImageImageUnderXpath = "//div[@class='image-preview']";
+    private String CoverImageImageOverXpath = "//div[@class='cover-preview']";
+
+    public void setShortTitle (String value){
+        ShortTitle .sendKeys(value);
+    }
+
+    public void setQuizTitle (String value){
+        QuizTitle .sendKeys(value);
+    }
+
+    public void setParentArticleURL (String value){
+        ParentArticleURL .sendKeys(value);
+    }
+
+    public void setQuizLengthOne(){
+        QuizLengthOne.click();
+    }
+
+    public void setQuizLengthTwo(){
+        QuizLengthTwo.click();
+    }
+
+    public void setDescription (String value){
+        Description .sendKeys(value);
+    }
+
+    public void setShowCoverImageNo(){
+        ShowCoverImageNo.click();
+    }
+
+    public void setShowCoverImageYes(){
+        ShowCoverImageYes.click();
+    }
+
+    public void setCoverImageInput (String value){
+        CoverImageInput .sendKeys(value);
+    }
+
+    public void setCoverImageSearch(){
+        CoverImageSearch.click();
+    }
+
+    public void setCoverImageRemove(){
+        CoverImageRemove.click();
+    }
+
+    public void setCoverImageImageUnder(){
+        CoverImageImageUnder.click();
+    }
+
+    public void setCoverImageImageOver(){
+        CoverImageImageOver.click();
+    }
